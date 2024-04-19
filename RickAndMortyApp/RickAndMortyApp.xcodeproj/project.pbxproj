@@ -19,6 +19,8 @@
 		A60D6A232BD2F1300073C826 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A60D6A222BD2F1300073C826 /* Lottie */; };
 		A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */ = {isa = PBXBuildFile; productRef = A66E70982BD2F49B0073E88B /* RickAndMortyUI */; };
 		A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A66E709A2BD2F49B0073E88B /* SnapKit */; };
+		EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4A92BD3058300F3037F /* Router.swift */; };
+		EB8FB4AD2BD306C800F3037F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = EB8FB4AC2BD306C800F3037F /* PanModal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,7 @@
 		A60D6A0D2BD2F0C10073C826 /* RickAndMortyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITests.swift; sourceTree = "<group>"; };
 		A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB8FB4A92BD3058300F3037F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8FB4AD2BD306C800F3037F /* PanModal in Frameworks */,
 				A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */,
 				A60D6A232BD2F1300073C826 /* Lottie in Frameworks */,
 				A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */,
@@ -135,8 +139,8 @@
 		A60D6A242BD2F2520073C826 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				EB8FB4A62BD3056400F3037F /* Common */,
 				A66E70962BD2F4370073E88B /* Front */,
-				A60D69F42BD2F0C00073C826 /* ViewController.swift */,
 			);
 			path = RickAndMorty;
 			sourceTree = "<group>";
@@ -152,6 +156,7 @@
 		A66E70962BD2F4370073E88B /* Front */ = {
 			isa = PBXGroup;
 			children = (
+				A60D69F42BD2F0C00073C826 /* ViewController.swift */,
 				A66E709C2BD2FAE70073E88B /* Storyboard */,
 			);
 			path = Front;
@@ -171,6 +176,14 @@
 				A60D69F62BD2F0C00073C826 /* Login.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		EB8FB4A62BD3056400F3037F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EB8FB4A92BD3058300F3037F /* Router.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +206,7 @@
 				A60D6A222BD2F1300073C826 /* Lottie */,
 				A66E70982BD2F49B0073E88B /* RickAndMortyUI */,
 				A66E709A2BD2F49B0073E88B /* SnapKit */,
+				EB8FB4AC2BD306C800F3037F /* PanModal */,
 			);
 			productName = RickAndMortyApp;
 			productReference = A60D69ED2BD2F0C00073C826 /* RickAndMortyApp.app */;
@@ -269,6 +283,7 @@
 			packageReferences = (
 				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */,
 			);
 			productRefGroup = A60D69EE2BD2F0C00073C826 /* Products */;
 			projectDirPath = "";
@@ -313,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */,
 				A60D69F52BD2F0C00073C826 /* ViewController.swift in Sources */,
 				A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */,
 				A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */,
@@ -686,6 +702,14 @@
 				version = 4.4.3;
 			};
 		};
+		EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/slackhq/PanModal.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.2.7;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -702,6 +726,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		EB8FB4AC2BD306C800F3037F /* PanModal */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */;
+			productName = PanModal;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
