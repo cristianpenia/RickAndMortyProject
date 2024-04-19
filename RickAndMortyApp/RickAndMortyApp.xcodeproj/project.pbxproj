@@ -16,6 +16,7 @@
 		A60D6A082BD2F0C10073C826 /* RickAndMortyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A072BD2F0C10073C826 /* RickAndMortyAppTests.swift */; };
 		A60D6A122BD2F0C10073C826 /* RickAndMortyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */; };
 		A60D6A142BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */; };
+		A60D6A232BD2F1300073C826 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A60D6A222BD2F1300073C826 /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A60D6A232BD2F1300073C826 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +101,7 @@
 		A60D69EF2BD2F0C00073C826 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
+				A60D6A242BD2F2520073C826 /* New Group */,
 				A60D69F02BD2F0C00073C826 /* AppDelegate.swift */,
 				A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */,
 				A60D69F42BD2F0C00073C826 /* ViewController.swift */,
@@ -127,6 +130,13 @@
 			path = RickAndMortyAppUITests;
 			sourceTree = "<group>";
 		};
+		A60D6A242BD2F2520073C826 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +153,9 @@
 			dependencies = (
 			);
 			name = RickAndMortyApp;
+			packageProductDependencies = (
+				A60D6A222BD2F1300073C826 /* Lottie */,
+			);
 			productName = RickAndMortyApp;
 			productReference = A60D69ED2BD2F0C00073C826 /* RickAndMortyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +228,10 @@
 				Base,
 			);
 			mainGroup = A60D69E42BD2F0C00073C826;
+			packageReferences = (
+				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = A60D69EE2BD2F0C00073C826 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -607,6 +624,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.7.1;
+			};
+		};
+		A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = exactVersion;
+				version = 4.4.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A60D6A222BD2F1300073C826 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A60D69E52BD2F0C00073C826 /* Project object */;
 }
