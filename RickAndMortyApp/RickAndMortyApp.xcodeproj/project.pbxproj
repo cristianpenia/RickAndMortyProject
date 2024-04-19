@@ -101,14 +101,11 @@
 		A60D69EF2BD2F0C00073C826 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
-				A60D6A242BD2F2520073C826 /* New Group */,
 				A60D69F02BD2F0C00073C826 /* AppDelegate.swift */,
 				A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */,
-				A60D69F42BD2F0C00073C826 /* ViewController.swift */,
-				A60D69F62BD2F0C00073C826 /* Main.storyboard */,
-				A60D69F92BD2F0C00073C826 /* Assets.xcassets */,
-				A60D69FB2BD2F0C00073C826 /* LaunchScreen.storyboard */,
 				A60D69FE2BD2F0C00073C826 /* Info.plist */,
+				A60D6A242BD2F2520073C826 /* RickAndMorty */,
+				A66E70952BD2F3680073E88B /* Resource */,
 			);
 			path = RickAndMortyApp;
 			sourceTree = "<group>";
@@ -130,11 +127,22 @@
 			path = RickAndMortyAppUITests;
 			sourceTree = "<group>";
 		};
-		A60D6A242BD2F2520073C826 /* New Group */ = {
+		A60D6A242BD2F2520073C826 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				A60D69F42BD2F0C00073C826 /* ViewController.swift */,
+				A60D69F62BD2F0C00073C826 /* Main.storyboard */,
+				A60D69FB2BD2F0C00073C826 /* LaunchScreen.storyboard */,
 			);
-			path = "New Group";
+			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		A66E70952BD2F3680073E88B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				A60D69F92BD2F0C00073C826 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
