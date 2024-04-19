@@ -17,6 +17,8 @@
 		A60D6A122BD2F0C10073C826 /* RickAndMortyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */; };
 		A60D6A142BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */; };
 		A60D6A232BD2F1300073C826 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A60D6A222BD2F1300073C826 /* Lottie */; };
+		A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */ = {isa = PBXBuildFile; productRef = A66E70982BD2F49B0073E88B /* RickAndMortyUI */; };
+		A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A66E709A2BD2F49B0073E88B /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +59,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */,
 				A60D6A232BD2F1300073C826 /* Lottie in Frameworks */,
+				A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +89,7 @@
 				A60D6A062BD2F0C10073C826 /* RickAndMortyAppTests */,
 				A60D6A102BD2F0C10073C826 /* RickAndMortyAppUITests */,
 				A60D69EE2BD2F0C00073C826 /* Products */,
+				A66E70972BD2F49B0073E88B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +135,7 @@
 		A60D6A242BD2F2520073C826 /* RickAndMorty */ = {
 			isa = PBXGroup;
 			children = (
+				A66E70962BD2F4370073E88B /* Front */,
 				A60D69F42BD2F0C00073C826 /* ViewController.swift */,
 				A60D69F62BD2F0C00073C826 /* Main.storyboard */,
 				A60D69FB2BD2F0C00073C826 /* LaunchScreen.storyboard */,
@@ -143,6 +149,20 @@
 				A60D69F92BD2F0C00073C826 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		A66E70962BD2F4370073E88B /* Front */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Front;
+			sourceTree = "<group>";
+		};
+		A66E70972BD2F49B0073E88B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +183,8 @@
 			name = RickAndMortyApp;
 			packageProductDependencies = (
 				A60D6A222BD2F1300073C826 /* Lottie */,
+				A66E70982BD2F49B0073E88B /* RickAndMortyUI */,
+				A66E709A2BD2F49B0073E88B /* SnapKit */,
 			);
 			productName = RickAndMortyApp;
 			productReference = A60D69ED2BD2F0C00073C826 /* RickAndMortyApp.app */;
@@ -657,6 +679,15 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		A66E70982BD2F49B0073E88B /* RickAndMortyUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RickAndMortyUI;
+		};
+		A66E709A2BD2F49B0073E88B /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
