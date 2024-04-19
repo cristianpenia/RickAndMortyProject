@@ -21,6 +21,7 @@
 		A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A66E709A2BD2F49B0073E88B /* SnapKit */; };
 		EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4A92BD3058300F3037F /* Router.swift */; };
 		EB8FB4AD2BD306C800F3037F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = EB8FB4AC2BD306C800F3037F /* PanModal */; };
+		EB8FB4AF2BD30C0B00F3037F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITests.swift; sourceTree = "<group>"; };
 		A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		EB8FB4A92BD3058300F3037F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				EB8FB4A92BD3058300F3037F /* Router.swift */,
+				EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8FB4AF2BD30C0B00F3037F /* BaseViewController.swift in Sources */,
 				EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */,
 				A60D69F52BD2F0C00073C826 /* ViewController.swift in Sources */,
 				A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */,
@@ -520,7 +524,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -551,7 +555,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

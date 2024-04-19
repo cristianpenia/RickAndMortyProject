@@ -10,9 +10,14 @@ import UIKit
 
 public struct Color {
     
-    static let background: UIColor = newColor(with: "RMBackground")
-    
-    static func newColor(with name: String) -> UIColor {
-        return UIColor(named: name) ?? UIColor.orange
+    struct Name {
+        
+        static let background = "RMBackground"
     }
+    
+    public static let background: UIColor = UIColor.white
+    public static let viewControllerBackground: UIColor = UIColor.newColor(with: Name.background)
+    
 }
+
+

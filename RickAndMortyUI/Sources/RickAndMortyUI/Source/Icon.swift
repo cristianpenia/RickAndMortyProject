@@ -10,6 +10,10 @@ import UIKit
 
 public struct Icon {
     
+    struct Name {
+        
+        static let error = "error"
+    }
     // System
     static let xmark = UIImage(systemName: "xmark")
     
