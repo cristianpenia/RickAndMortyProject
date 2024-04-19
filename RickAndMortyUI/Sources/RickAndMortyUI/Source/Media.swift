@@ -20,4 +20,9 @@ public struct Media {
         
         static let rickAndMorty = UIImage(named: Name.rickAndMorty)
     }
+    
+    public struct Lottie {
+        
+        public static let loading = "loading"
+    }
 }

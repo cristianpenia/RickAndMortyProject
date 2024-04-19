@@ -14,11 +14,19 @@ let package = Package(
             name: "RickAndMortyUI",
             targets: ["RickAndMortyUI"]),
     ],
+    dependencies: [
+        .package(url: "https://github.com/airbnb/lottie-ios.git", exact: "4.4.3"),
+        .package(url: "https://github.com/SnapKit/SnapKit.git", exact: "5.7.1"),
+    ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "RickAndMortyUI"),
+            name: "RickAndMortyUI",
+            dependencies: [.product(name: "Lottie", package: "lottie-ios"), "SnapKit"],
+            resources: [
+                .process("Resource/Lotties/loading.json")
+            ]),
         .testTarget(
             name: "RickAndMortyUITests",
             dependencies: ["RickAndMortyUI"]),
