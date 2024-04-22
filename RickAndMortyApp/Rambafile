@@ -11,23 +11,22 @@ prefix: RickAndMortyApp
 project_target: RickAndMortyApp
 
 # The file path for new modules
-project_file_path: RickAndMorty/Front/Modules
+project_file_path: RickAndMorty/Front/Modules/[NAME]
 
 # The Xcode group path to new modules
-project_group_path: RickAndMorty/Front/Modules
+project_group_path: RickAndMorty/Front/Modules/[NAME]
 
 ### Tests generation settings section
 # The tests target name
 test_target: RickAndMortyAppTests
 
 # The file path for new tests
-test_file_path: Front/Modules
+test_file_path: RickAndMortyAppTests/Front/Modules/[NAME]
 
 # The Xcode group path to new tests
-test_group_path: Front/Modules
+test_group_path: RickAndMortyAppTests/Front/Modules/[NAME]
 
 ### Templates
 templates:
-- {name: rviper_controller}
 - {name: mvvm_controller}
 - {name: swifty_viper}
