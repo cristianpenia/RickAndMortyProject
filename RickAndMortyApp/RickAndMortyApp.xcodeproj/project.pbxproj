@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E43796A2FFA692C2D7D0767 /* LoginInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = B9916A1D9E85D98471A12F29 /* LoginInteractor.m */; };
+		1D03B6876094F8C12D432B25 /* LoginViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B023F83FE32C3228E514178 /* LoginViewControllerTests.m */; };
+		301AAA9A6B6A33B60DF097C8 /* LoginInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 023D09D057CFC3B48322743F /* LoginInteractorTests.m */; };
+		46E23885539B7C02834A076C /* LoginRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 69ECFF82E04133CE491733FA /* LoginRouter.m */; };
+		548671F81B3FBD0EC94AA2A6 /* LoginRouterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09E80FF5C30A0A22623833CF /* LoginRouterTests.m */; };
+		93C09167DAE7A398D7CCF3A9 /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9495E5C0E59C9BE604899FD /* LoginPresenter.m */; };
 		A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F02BD2F0C00073C826 /* AppDelegate.swift */; };
 		A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */; };
 		A60D69F52BD2F0C00073C826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F42BD2F0C00073C826 /* ViewController.swift */; };
@@ -19,9 +25,13 @@
 		A60D6A232BD2F1300073C826 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A60D6A222BD2F1300073C826 /* Lottie */; };
 		A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */ = {isa = PBXBuildFile; productRef = A66E70982BD2F49B0073E88B /* RickAndMortyUI */; };
 		A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A66E709A2BD2F49B0073E88B /* SnapKit */; };
+		D700928DCDDEB13389ADC4D3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EECFB8F29271286FAB55506 /* LoginViewController.m */; };
+		E9986BA4AEDED850359C9041 /* LoginAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 46C858D6489A056D0CEBC26D /* LoginAssemblyTests.m */; };
 		EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4A92BD3058300F3037F /* Router.swift */; };
 		EB8FB4AD2BD306C800F3037F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = EB8FB4AC2BD306C800F3037F /* PanModal */; };
 		EB8FB4AF2BD30C0B00F3037F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */; };
+		EC212BF2CE4753464F4087BF /* LoginPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A41999C5D3ADCCA411AC62CA /* LoginPresenterTests.m */; };
+		FC4280BFF709163FEF1A389E /* LoginAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D98D668217F420FD94AEF99 /* LoginAssembly.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023D09D057CFC3B48322743F /* LoginInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginInteractorTests.m; path = RickAndMortyAppStart/LoginInteractorTests.m; sourceTree = "<group>"; };
+		09E80FF5C30A0A22623833CF /* LoginRouterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginRouterTests.m; path = RickAndMortyAppStart/LoginRouterTests.m; sourceTree = "<group>"; };
+		1E72B392F8AB7BC8AD633114 /* LoginAssembly_Testable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginAssembly_Testable.h; path = RickAndMortyAppStart/LoginAssembly_Testable.h; sourceTree = "<group>"; };
+		2B023F83FE32C3228E514178 /* LoginViewControllerTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginViewControllerTests.m; path = RickAndMortyAppStart/LoginViewControllerTests.m; sourceTree = "<group>"; };
+		38DC2FC942D125918EFEFDB4 /* LoginInteractorInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginInteractorInput.h; path = RickAndMortyAppStart/LoginInteractorInput.h; sourceTree = "<group>"; };
+		46C858D6489A056D0CEBC26D /* LoginAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginAssemblyTests.m; path = RickAndMortyAppStart/LoginAssemblyTests.m; sourceTree = "<group>"; };
+		59F7D363BF3AF33B7711EA7A /* LoginRouterInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginRouterInput.h; path = RickAndMortyAppStart/LoginRouterInput.h; sourceTree = "<group>"; };
+		5D98D668217F420FD94AEF99 /* LoginAssembly.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginAssembly.m; path = RickAndMortyAppStart/LoginAssembly.m; sourceTree = "<group>"; };
+		69ECFF82E04133CE491733FA /* LoginRouter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginRouter.m; path = RickAndMortyAppStart/LoginRouter.m; sourceTree = "<group>"; };
+		6EECFB8F29271286FAB55506 /* LoginViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = RickAndMortyAppStart/LoginViewController.m; sourceTree = "<group>"; };
+		88A7FE22250293CB13F1639C /* LoginInteractor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginInteractor.h; path = RickAndMortyAppStart/LoginInteractor.h; sourceTree = "<group>"; };
+		982AE99A89AD2928A2F4BE40 /* LoginViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginViewInput.h; path = RickAndMortyAppStart/LoginViewInput.h; sourceTree = "<group>"; };
+		9FB127C65B797C80DDFC393E /* LoginInteractorOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginInteractorOutput.h; path = RickAndMortyAppStart/LoginInteractorOutput.h; sourceTree = "<group>"; };
+		A41999C5D3ADCCA411AC62CA /* LoginPresenterTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginPresenterTests.m; path = RickAndMortyAppStart/LoginPresenterTests.m; sourceTree = "<group>"; };
+		A5DFBFDCDB3612AB09FFEAA0 /* LoginRouter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginRouter.h; path = RickAndMortyAppStart/LoginRouter.h; sourceTree = "<group>"; };
 		A60D69ED2BD2F0C00073C826 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D69F02BD2F0C00073C826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +80,13 @@
 		A60D6A0D2BD2F0C10073C826 /* RickAndMortyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITests.swift; sourceTree = "<group>"; };
 		A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A64B763EF4E5F3715877E0E2 /* LoginModuleInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginModuleInput.h; path = RickAndMortyAppStart/LoginModuleInput.h; sourceTree = "<group>"; };
+		B9916A1D9E85D98471A12F29 /* LoginInteractor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginInteractor.m; path = RickAndMortyAppStart/LoginInteractor.m; sourceTree = "<group>"; };
+		C48BEA0C04EAC409FC68BE8C /* LoginViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = RickAndMortyAppStart/LoginViewController.h; sourceTree = "<group>"; };
+		D19E62E2B01812FF22CFA23C /* LoginPresenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginPresenter.h; path = RickAndMortyAppStart/LoginPresenter.h; sourceTree = "<group>"; };
+		D4E842B8FD4B489F095D9C5C /* LoginViewOutput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginViewOutput.h; path = RickAndMortyAppStart/LoginViewOutput.h; sourceTree = "<group>"; };
+		D9495E5C0E59C9BE604899FD /* LoginPresenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LoginPresenter.m; path = RickAndMortyAppStart/LoginPresenter.m; sourceTree = "<group>"; };
+		DF5F92B4D3D102BBAB04E18A /* LoginAssembly.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LoginAssembly.h; path = RickAndMortyAppStart/LoginAssembly.h; sourceTree = "<group>"; };
 		EB8FB4A92BD3058300F3037F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +120,106 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		010D59DB97D3FFEBDEFBD788 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				DF5F92B4D3D102BBAB04E18A /* LoginAssembly.h */,
+				5D98D668217F420FD94AEF99 /* LoginAssembly.m */,
+			);
+			name = Assembly;
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		18D180BB20582C51D027C9B5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B023F83FE32C3228E514178 /* LoginViewControllerTests.m */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		2000659147834B613443A7BC /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				BB417A649A0C1C894C06B8C2 /* Start */,
+			);
+			name = Modules;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5012E9E64A4A96BCC4F46C28 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				38DC2FC942D125918EFEFDB4 /* LoginInteractorInput.h */,
+				9FB127C65B797C80DDFC393E /* LoginInteractorOutput.h */,
+				88A7FE22250293CB13F1639C /* LoginInteractor.h */,
+				B9916A1D9E85D98471A12F29 /* LoginInteractor.m */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		554496BA69E7025C5CE4263D /* RickAndMorty */ = {
+			isa = PBXGroup;
+			children = (
+				AF1A27FE23F94FC743DCDC8D /* Front */,
+			);
+			name = RickAndMorty;
+			path = RickAndMorty;
+			sourceTree = "<group>";
+		};
+		57C398A697AF7EF1F7D187C7 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				90A139AA40E193390B7245A5 /* Login */,
+			);
+			name = Start;
+			path = Start;
+			sourceTree = "<group>";
+		};
+		69C407501D61DA20E4E9495E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				59F7D363BF3AF33B7711EA7A /* LoginRouterInput.h */,
+				A5DFBFDCDB3612AB09FFEAA0 /* LoginRouter.h */,
+				69ECFF82E04133CE491733FA /* LoginRouter.m */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		84E5FB2E763B829404E3157E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A41999C5D3ADCCA411AC62CA /* LoginPresenterTests.m */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		90A139AA40E193390B7245A5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				010D59DB97D3FFEBDEFBD788 /* Assembly */,
+				CB757CF51BA4ECF077359EFB /* View */,
+				A6891C72E9A59DB3DA644BA5 /* Presenter */,
+				5012E9E64A4A96BCC4F46C28 /* Interactor */,
+				69C407501D61DA20E4E9495E /* Router */,
+			);
+			name = Login;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9B13A5029934A1614B9182C8 /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				2000659147834B613443A7BC /* Modules */,
+			);
+			name = Front;
+			path = Front;
+			sourceTree = "<group>";
+		};
 		A60D69E42BD2F0C00073C826 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +228,8 @@
 				A60D6A102BD2F0C10073C826 /* RickAndMortyAppUITests */,
 				A60D69EE2BD2F0C00073C826 /* Products */,
 				A66E70972BD2F49B0073E88B /* Frameworks */,
+				554496BA69E7025C5CE4263D /* RickAndMorty */,
+				9B13A5029934A1614B9182C8 /* Front */,
 			);
 			sourceTree = "<group>";
 		};
@@ -178,6 +312,97 @@
 				A60D69F62BD2F0C00073C826 /* Login.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		A6891C72E9A59DB3DA644BA5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A64B763EF4E5F3715877E0E2 /* LoginModuleInput.h */,
+				D19E62E2B01812FF22CFA23C /* LoginPresenter.h */,
+				D9495E5C0E59C9BE604899FD /* LoginPresenter.m */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A70A106B6C8419EBF5793770 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				CBC4457272AA4A02DC7ED754 /* Assembly */,
+				18D180BB20582C51D027C9B5 /* View */,
+				84E5FB2E763B829404E3157E /* Presenter */,
+				B59C583E234239E1CAF466E9 /* Interactor */,
+				B9B8904DEA32BCB67E9A3099 /* Router */,
+			);
+			name = Login;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AF1A27FE23F94FC743DCDC8D /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				BB5B97FEE189874E4C3F222E /* Modules */,
+			);
+			name = Front;
+			path = Front;
+			sourceTree = "<group>";
+		};
+		B59C583E234239E1CAF466E9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				023D09D057CFC3B48322743F /* LoginInteractorTests.m */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		B9B8904DEA32BCB67E9A3099 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				09E80FF5C30A0A22623833CF /* LoginRouterTests.m */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		BB417A649A0C1C894C06B8C2 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				A70A106B6C8419EBF5793770 /* Login */,
+			);
+			name = Start;
+			path = Start;
+			sourceTree = "<group>";
+		};
+		BB5B97FEE189874E4C3F222E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				57C398A697AF7EF1F7D187C7 /* Start */,
+			);
+			name = Modules;
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		CB757CF51BA4ECF077359EFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				982AE99A89AD2928A2F4BE40 /* LoginViewInput.h */,
+				D4E842B8FD4B489F095D9C5C /* LoginViewOutput.h */,
+				C48BEA0C04EAC409FC68BE8C /* LoginViewController.h */,
+				6EECFB8F29271286FAB55506 /* LoginViewController.m */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		CBC4457272AA4A02DC7ED754 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				46C858D6489A056D0CEBC26D /* LoginAssemblyTests.m */,
+				1E72B392F8AB7BC8AD633114 /* LoginAssembly_Testable.h */,
+			);
+			name = Assembly;
+			path = Assembly;
 			sourceTree = "<group>";
 		};
 		EB8FB4A62BD3056400F3037F /* Common */ = {
@@ -284,9 +509,9 @@
 			);
 			mainGroup = A60D69E42BD2F0C00073C826;
 			packageReferences = (
-				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */,
+				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */,
+				EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal.git" */,
 			);
 			productRefGroup = A60D69EE2BD2F0C00073C826 /* Products */;
 			projectDirPath = "";
@@ -336,6 +561,11 @@
 				A60D69F52BD2F0C00073C826 /* ViewController.swift in Sources */,
 				A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */,
 				A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */,
+				FC4280BFF709163FEF1A389E /* LoginAssembly.m in Sources */,
+				D700928DCDDEB13389ADC4D3 /* LoginViewController.m in Sources */,
+				93C09167DAE7A398D7CCF3A9 /* LoginPresenter.m in Sources */,
+				0E43796A2FFA692C2D7D0767 /* LoginInteractor.m in Sources */,
+				46E23885539B7C02834A076C /* LoginRouter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +574,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60D6A082BD2F0C10073C826 /* RickAndMortyAppTests.swift in Sources */,
+				E9986BA4AEDED850359C9041 /* LoginAssemblyTests.m in Sources */,
+				1D03B6876094F8C12D432B25 /* LoginViewControllerTests.m in Sources */,
+				EC212BF2CE4753464F4087BF /* LoginPresenterTests.m in Sources */,
+				301AAA9A6B6A33B60DF097C8 /* LoginInteractorTests.m in Sources */,
+				548671F81B3FBD0EC94AA2A6 /* LoginRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +925,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -698,7 +933,7 @@
 				version = 5.7.1;
 			};
 		};
-		A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -706,7 +941,7 @@
 				version = 4.4.3;
 			};
 		};
-		EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */ = {
+		EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/slackhq/PanModal.git";
 			requirement = {
@@ -719,7 +954,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		A60D6A222BD2F1300073C826 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */;
 			productName = Lottie;
 		};
 		A66E70982BD2F49B0073E88B /* RickAndMortyUI */ = {
@@ -728,12 +963,12 @@
 		};
 		A66E709A2BD2F49B0073E88B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 		EB8FB4AC2BD306C800F3037F /* PanModal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */;
+			package = EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal.git" */;
 			productName = PanModal;
 		};
 /* End XCSwiftPackageProductDependency section */
