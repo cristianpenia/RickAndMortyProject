@@ -11,12 +11,18 @@ import SnapKit
 
 class BaseViewController: UIViewController {
     
+    
+    // MARK: Views
+    
     var viewBackground: UIView! {
         didSet {
             viewBackground.backgroundColor = Color.viewControllerBackground
             viewBackground.layer.cornerRadius = 48
         }
     }
+    
+    
+    // Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
