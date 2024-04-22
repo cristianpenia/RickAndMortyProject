@@ -11,20 +11,20 @@ prefix: RickAndMortyApp
 project_target: RickAndMortyApp
 
 # The file path for new modules
-project_file_path: RickAndMorty/Front/Modules/[NAME]
+project_file_path: RickAndMortyApp/RickAndMorty/Front/Modules/[NAME_MODULE]
 
 # The Xcode group path to new modules
-project_group_path: RickAndMorty/Front/Modules/[NAME]
+project_group_path: RickAndMortyApp/RickAndMorty/Front/Modules/[NAME_MODULE]
 
 ### Tests generation settings section
 # The tests target name
 test_target: RickAndMortyAppTests
 
 # The file path for new tests
-test_file_path: RickAndMortyAppTests/Front/Modules/[NAME]
+test_file_path: RickAndMortyAppTests/Front/Modules/[NAME_MODULE]
 
 # The Xcode group path to new tests
-test_group_path: RickAndMortyAppTests/Front/Modules/[NAME]
+test_group_path: RickAndMortyAppTests/Front/Modules/[NAME_MODULE]
 
 ### Templates
 templates:
