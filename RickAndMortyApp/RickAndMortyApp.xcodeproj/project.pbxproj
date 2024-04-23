@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FE9D22D9AB5B71DDA522EC3 /* RickAndMortyAppLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60861EF989E94ABB0021BAA9 /* RickAndMortyAppLoginViewController.swift */; };
+		1B9091457B48702891512B71 /* RickAndMortyAppLoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3603404C065F48B2862FD5B /* RickAndMortyAppLoginPresenterTests.swift */; };
+		2A362AFBC5B19702FFB4416C /* RickAndMortyAppLoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC4B32C349FE4EB85590CC /* RickAndMortyAppLoginViewTests.swift */; };
+		36E60B511B522DF4A931AF64 /* RickAndMortyAppLoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A74F15EC7D1378DE35D494A /* RickAndMortyAppLoginConfigurator.swift */; };
+		3CFD52ED16F0BBD58713FF94 /* RickAndMortyAppLoginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6847F8B07BE45FB9F35812CF /* RickAndMortyAppLoginModuleInput.swift */; };
+		4C3AC4A4437BEAB24C55767C /* RickAndMortyAppLoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AD9157435DECB3B6707605 /* RickAndMortyAppLoginViewInput.swift */; };
+		58B24B342F5ACAE4F11AF689 /* RickAndMortyAppLoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907E09480F08778EE9B73366 /* RickAndMortyAppLoginInteractor.swift */; };
+		6CCB61A387BD9A7B8D94B38C /* RickAndMortyAppLoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7476C004A668896EB6EA6 /* RickAndMortyAppLoginRouter.swift */; };
+		7F52789677D36A9B65A9B27C /* RickAndMortyAppLoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41174C4910481EF71C7558BA /* RickAndMortyAppLoginInteractorOutput.swift */; };
+		8219CFE21C02D2EB703980BF /* RickAndMortyAppLoginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACEA385910F5DD44A79363 /* RickAndMortyAppLoginInitializer.swift */; };
 		A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F02BD2F0C00073C826 /* AppDelegate.swift */; };
 		A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */; };
 		A60D69F52BD2F0C00073C826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F42BD2F0C00073C826 /* ViewController.swift */; };
@@ -19,9 +29,16 @@
 		A60D6A232BD2F1300073C826 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A60D6A222BD2F1300073C826 /* Lottie */; };
 		A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */ = {isa = PBXBuildFile; productRef = A66E70982BD2F49B0073E88B /* RickAndMortyUI */; };
 		A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A66E709A2BD2F49B0073E88B /* SnapKit */; };
+		A704BEFE154491F0EA21B8C0 /* RickAndMortyAppLoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37407F7077CF987E4AEFFCCC /* RickAndMortyAppLoginInteractorInput.swift */; };
+		C3ECC949753BF15EE593AEC3 /* RickAndMortyAppLoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421D225419E14750D8D9987E /* RickAndMortyAppLoginViewOutput.swift */; };
+		C513D0965B24128850A76399 /* RickAndMortyAppLoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE223E2B7C3C5800BC167BA /* RickAndMortyAppLoginInteractorTests.swift */; };
+		DA70B8042564400A8E3CB4D9 /* RickAndMortyAppLoginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B634332974434C1A326ED5 /* RickAndMortyAppLoginConfiguratorTests.swift */; };
+		E6DDA2889985FC08218E3275 /* RickAndMortyAppLoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1932D670945CC48CDE760197 /* RickAndMortyAppLoginPresenter.swift */; };
 		EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4A92BD3058300F3037F /* Router.swift */; };
 		EB8FB4AD2BD306C800F3037F /* PanModal in Frameworks */ = {isa = PBXBuildFile; productRef = EB8FB4AC2BD306C800F3037F /* PanModal */; };
 		EB8FB4AF2BD30C0B00F3037F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */; };
+		F4DEEF88F3A7682AF9D37A47 /* RickAndMortyAppLoginRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308FE61D52AB1482B43835F3 /* RickAndMortyAppLoginRouterInput.swift */; };
+		FA038E93CAD0DDFB78E91AE3 /* RickAndMortyAppLoginRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E181874448C8D3BDC7AD3E68 /* RickAndMortyAppLoginRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +59,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01AD9157435DECB3B6707605 /* RickAndMortyAppLoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginViewInput.swift; sourceTree = "<group>"; };
+		09ACEA385910F5DD44A79363 /* RickAndMortyAppLoginInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginInitializer.swift; sourceTree = "<group>"; };
+		1932D670945CC48CDE760197 /* RickAndMortyAppLoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginPresenter.swift; sourceTree = "<group>"; };
+		308FE61D52AB1482B43835F3 /* RickAndMortyAppLoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginRouterInput.swift; sourceTree = "<group>"; };
+		37407F7077CF987E4AEFFCCC /* RickAndMortyAppLoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginInteractorInput.swift; sourceTree = "<group>"; };
+		41174C4910481EF71C7558BA /* RickAndMortyAppLoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginInteractorOutput.swift; sourceTree = "<group>"; };
+		421D225419E14750D8D9987E /* RickAndMortyAppLoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginViewOutput.swift; sourceTree = "<group>"; };
+		4A74F15EC7D1378DE35D494A /* RickAndMortyAppLoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginConfigurator.swift; sourceTree = "<group>"; };
+		60861EF989E94ABB0021BAA9 /* RickAndMortyAppLoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginViewController.swift; sourceTree = "<group>"; };
+		61B634332974434C1A326ED5 /* RickAndMortyAppLoginConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginConfiguratorTests.swift; sourceTree = "<group>"; };
+		6847F8B07BE45FB9F35812CF /* RickAndMortyAppLoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginModuleInput.swift; sourceTree = "<group>"; };
+		907E09480F08778EE9B73366 /* RickAndMortyAppLoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginInteractor.swift; sourceTree = "<group>"; };
+		95D7476C004A668896EB6EA6 /* RickAndMortyAppLoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginRouter.swift; sourceTree = "<group>"; };
 		A60D69ED2BD2F0C00073C826 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D69F02BD2F0C00073C826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,6 +85,10 @@
 		A60D6A0D2BD2F0C10073C826 /* RickAndMortyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITests.swift; sourceTree = "<group>"; };
 		A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AEE223E2B7C3C5800BC167BA /* RickAndMortyAppLoginInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginInteractorTests.swift; sourceTree = "<group>"; };
+		B3603404C065F48B2862FD5B /* RickAndMortyAppLoginPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginPresenterTests.swift; sourceTree = "<group>"; };
+		B6BC4B32C349FE4EB85590CC /* RickAndMortyAppLoginViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginViewTests.swift; sourceTree = "<group>"; };
+		E181874448C8D3BDC7AD3E68 /* RickAndMortyAppLoginRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppLoginRouterTests.swift; sourceTree = "<group>"; };
 		EB8FB4A92BD3058300F3037F /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +122,109 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B7D192949CE798B2C04100C /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				51F931D341BBB0AF60F85634 /* Login */,
+			);
+			name = Start;
+			path = Start;
+			sourceTree = "<group>";
+		};
+		393399DBC84133BE3BD2F6D0 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				37407F7077CF987E4AEFFCCC /* RickAndMortyAppLoginInteractorInput.swift */,
+				41174C4910481EF71C7558BA /* RickAndMortyAppLoginInteractorOutput.swift */,
+				907E09480F08778EE9B73366 /* RickAndMortyAppLoginInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3E18AAB2C83B95D27DF38710 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				F0B4BEA256A7223CC0187005 /* Login */,
+			);
+			name = Start;
+			path = Start;
+			sourceTree = "<group>";
+		};
+		51F931D341BBB0AF60F85634 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5319F93FB136357A17E7EF2E /* Configurator */,
+				81B99D1555A9B0605B66C28D /* View */,
+				6DE3042A4D63469A61184814 /* Interactor */,
+				821C09296434BAB8AE841382 /* Presenter */,
+				7996D470EAEDCA6A4854A68E /* Router */,
+			);
+			name = Login;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5319F93FB136357A17E7EF2E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				61B634332974434C1A326ED5 /* RickAndMortyAppLoginConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		5709AC6921A633AA6DE412CD /* Front */ = {
+			isa = PBXGroup;
+			children = (
+				75A38D4F06BCFDE0053B94C1 /* Modules */,
+			);
+			path = Front;
+			sourceTree = "<group>";
+		};
+		6DE3042A4D63469A61184814 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AEE223E2B7C3C5800BC167BA /* RickAndMortyAppLoginInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		75A38D4F06BCFDE0053B94C1 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				0B7D192949CE798B2C04100C /* Start */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		7996D470EAEDCA6A4854A68E /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				E181874448C8D3BDC7AD3E68 /* RickAndMortyAppLoginRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
+		81B99D1555A9B0605B66C28D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6BC4B32C349FE4EB85590CC /* RickAndMortyAppLoginViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		821C09296434BAB8AE841382 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				B3603404C065F48B2862FD5B /* RickAndMortyAppLoginPresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		A60D69E42BD2F0C00073C826 = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				A60D6A072BD2F0C10073C826 /* RickAndMortyAppTests.swift */,
+				5709AC6921A633AA6DE412CD /* Front */,
 			);
 			path = RickAndMortyAppTests;
 			sourceTree = "<group>";
@@ -181,6 +319,26 @@
 			path = Storyboard;
 			sourceTree = "<group>";
 		};
+		AAE2B4BA35EE84B5C0C1BB86 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				4A74F15EC7D1378DE35D494A /* RickAndMortyAppLoginConfigurator.swift */,
+				09ACEA385910F5DD44A79363 /* RickAndMortyAppLoginInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		D235ACDB79E194FD4B6BA24C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				308FE61D52AB1482B43835F3 /* RickAndMortyAppLoginRouterInput.swift */,
+				95D7476C004A668896EB6EA6 /* RickAndMortyAppLoginRouter.swift */,
+			);
+			name = Router;
+			path = Router;
+			sourceTree = "<group>";
+		};
 		EB8FB4A62BD3056400F3037F /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,8 +351,43 @@
 		EEFBF0E476871B632CD4409C /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3E18AAB2C83B95D27DF38710 /* Start */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		EF38A6FE658A3CEC77D0B7AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01AD9157435DECB3B6707605 /* RickAndMortyAppLoginViewInput.swift */,
+				421D225419E14750D8D9987E /* RickAndMortyAppLoginViewOutput.swift */,
+				60861EF989E94ABB0021BAA9 /* RickAndMortyAppLoginViewController.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		F0B4BEA256A7223CC0187005 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EF38A6FE658A3CEC77D0B7AA /* View */,
+				F36082F49ADDE9FB60FA3F1C /* Presenter */,
+				393399DBC84133BE3BD2F6D0 /* Interactor */,
+				D235ACDB79E194FD4B6BA24C /* Router */,
+				AAE2B4BA35EE84B5C0C1BB86 /* Configurator */,
+			);
+			name = Login;
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F36082F49ADDE9FB60FA3F1C /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				6847F8B07BE45FB9F35812CF /* RickAndMortyAppLoginModuleInput.swift */,
+				1932D670945CC48CDE760197 /* RickAndMortyAppLoginPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,9 +485,9 @@
 			);
 			mainGroup = A60D69E42BD2F0C00073C826;
 			packageReferences = (
-				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */,
+				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */,
+				EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal.git" */,
 			);
 			productRefGroup = A60D69EE2BD2F0C00073C826 /* Products */;
 			projectDirPath = "";
@@ -344,6 +537,18 @@
 				A60D69F52BD2F0C00073C826 /* ViewController.swift in Sources */,
 				A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */,
 				A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */,
+				4C3AC4A4437BEAB24C55767C /* RickAndMortyAppLoginViewInput.swift in Sources */,
+				C3ECC949753BF15EE593AEC3 /* RickAndMortyAppLoginViewOutput.swift in Sources */,
+				0FE9D22D9AB5B71DDA522EC3 /* RickAndMortyAppLoginViewController.swift in Sources */,
+				3CFD52ED16F0BBD58713FF94 /* RickAndMortyAppLoginModuleInput.swift in Sources */,
+				E6DDA2889985FC08218E3275 /* RickAndMortyAppLoginPresenter.swift in Sources */,
+				A704BEFE154491F0EA21B8C0 /* RickAndMortyAppLoginInteractorInput.swift in Sources */,
+				7F52789677D36A9B65A9B27C /* RickAndMortyAppLoginInteractorOutput.swift in Sources */,
+				58B24B342F5ACAE4F11AF689 /* RickAndMortyAppLoginInteractor.swift in Sources */,
+				F4DEEF88F3A7682AF9D37A47 /* RickAndMortyAppLoginRouterInput.swift in Sources */,
+				6CCB61A387BD9A7B8D94B38C /* RickAndMortyAppLoginRouter.swift in Sources */,
+				36E60B511B522DF4A931AF64 /* RickAndMortyAppLoginConfigurator.swift in Sources */,
+				8219CFE21C02D2EB703980BF /* RickAndMortyAppLoginInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +557,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A60D6A082BD2F0C10073C826 /* RickAndMortyAppTests.swift in Sources */,
+				DA70B8042564400A8E3CB4D9 /* RickAndMortyAppLoginConfiguratorTests.swift in Sources */,
+				2A362AFBC5B19702FFB4416C /* RickAndMortyAppLoginViewTests.swift in Sources */,
+				C513D0965B24128850A76399 /* RickAndMortyAppLoginInteractorTests.swift in Sources */,
+				1B9091457B48702891512B71 /* RickAndMortyAppLoginPresenterTests.swift in Sources */,
+				FA038E93CAD0DDFB78E91AE3 /* RickAndMortyAppLoginRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,7 +908,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -706,7 +916,7 @@
 				version = 5.7.1;
 			};
 		};
-		A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -714,7 +924,7 @@
 				version = 4.4.3;
 			};
 		};
-		EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */ = {
+		EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/slackhq/PanModal.git";
 			requirement = {
@@ -727,7 +937,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		A60D6A222BD2F1300073C826 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */;
 			productName = Lottie;
 		};
 		A66E70982BD2F49B0073E88B /* RickAndMortyUI */ = {
@@ -736,12 +946,12 @@
 		};
 		A66E709A2BD2F49B0073E88B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 		EB8FB4AC2BD306C800F3037F /* PanModal */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal" */;
+			package = EB8FB4AB2BD306C800F3037F /* XCRemoteSwiftPackageReference "PanModal.git" */;
 			productName = PanModal;
 		};
 /* End XCSwiftPackageProductDependency section */
