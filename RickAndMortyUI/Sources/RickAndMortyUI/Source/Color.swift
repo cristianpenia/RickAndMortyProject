@@ -12,11 +12,12 @@ public struct Color {
     
     struct Name {
         
-        static let background = "RMBackground"
+        static let backgroundLine = "RMBackgroundLine"
+        static let viewControllerBackground = "RMBackground"
     }
     
-    public static let background: UIColor = UIColor.white
-    public static let viewControllerBackground: UIColor = UIColor.newColor(with: Name.background)
+    public static let backgroundLine: UIColor = UIColor.newColor(with: Name.backgroundLine)
+    public static let viewControllerBackground: UIColor = UIColor.newColor(with: Name.viewControllerBackground)
     
 }
 

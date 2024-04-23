@@ -21,8 +21,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let storyboard = UIStoryboard(name: "Start", bundle: nil)
-        if let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+        let storyboard = UIStoryboard(name: Storyboards.Start.rawValue, bundle: nil)
+        
+        if let loginViewController = storyboard.instantiateViewController(withIdentifier: LoginViewController.name) as? LoginViewController {
             
             let configurator = LoginModuleConfigurator()
             

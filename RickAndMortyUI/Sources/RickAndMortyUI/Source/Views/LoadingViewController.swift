@@ -37,7 +37,7 @@ public class LoadingViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = Color.background
+        view.backgroundColor = Color.viewControllerBackground
         
         addViews()
     }
