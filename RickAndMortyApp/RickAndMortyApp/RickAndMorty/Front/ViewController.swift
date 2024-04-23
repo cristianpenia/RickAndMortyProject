@@ -7,7 +7,6 @@
 
 import UIKit
 import RickAndMortyUI
-import Lottie
 
 class ViewController: BaseViewController {
     
