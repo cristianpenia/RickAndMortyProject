@@ -6,7 +6,7 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol HomeViewInput: class {
+protocol HomeViewInput: AnyObject {
 
     /**
         @author Cristian Peña

@@ -12,7 +12,7 @@
         <!--Login View Controller-->
         <scene sceneID="uOo-K3-XiC">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="Adh-PA-bLf" customClass="LoginViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Adh-PA-bLf" customClass="LoginViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QSI-2d-PRf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -106,21 +106,6 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="959.5419847328244" y="-2.1126760563380285"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="X2I-GT-390">
-            <objects>
-                <viewController id="V9m-aE-PBK" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="YhY-Ft-jWo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="SUm-53-Wkf"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EiV-Ug-yzp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1668" y="-2"/>
         </scene>
     </scenes>
     <resources>

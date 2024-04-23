@@ -6,6 +6,6 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol HomeModuleInput: class {
+protocol HomeModuleInput: AnyObject {
 
 }
