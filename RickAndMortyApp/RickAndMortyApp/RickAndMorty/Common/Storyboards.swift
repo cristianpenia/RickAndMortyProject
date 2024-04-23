@@ -10,4 +10,5 @@ import Foundation
 public enum Storyboards: String {
     
     case Start = "Start"
+    case Home = "Home"
 }

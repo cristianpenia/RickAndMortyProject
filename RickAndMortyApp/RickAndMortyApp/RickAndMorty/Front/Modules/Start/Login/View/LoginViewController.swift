@@ -7,21 +7,42 @@
 //
 
 import UIKit
+import RickAndMortyUI
 
 class LoginViewController: BaseViewController {
     
     
     // MARK: Views
     
-    @IBOutlet weak var informationButton: UIButton!
+    @IBOutlet weak var informationButton: UIButton! {
+        didSet {
+            informationButton.tintColor = .green
+        }
+    }
     
-    @IBOutlet weak var appImageView: UIImageView!
+    @IBOutlet weak var appImageView: UIImageView! {
+        didSet {
+            appImageView.image = Media.Image.rickAndMorty
+        }
+    }
     
-    @IBOutlet weak var usernameTextField: UITextField!
+    @IBOutlet weak var usernameTextField: UITextField! {
+        didSet {
+            usernameTextField.placeholder = "Usuario" // TODO: In a next PR, chain management will be added
+        }
+    }
     
-    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField! {
+        didSet {
+            passwordTextField.placeholder = "Usuario" // TODO: In a next PR, chain management will be added
+        }
+    }
     
-    @IBOutlet weak var sendButton: UIButton!
+    @IBOutlet weak var sendButton: UIButton! {
+        didSet {
+            sendButton.setTitle("Iniciar sesión", for: .normal) // TODO: In a next PR, chain management will be added
+        }
+    }
     
     
     // MARK: Properties

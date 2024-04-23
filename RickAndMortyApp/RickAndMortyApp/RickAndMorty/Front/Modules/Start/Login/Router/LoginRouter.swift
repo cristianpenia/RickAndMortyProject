@@ -13,7 +13,7 @@ class LoginRouter: LoginRouterInput {
     func routeToHome() {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate
         
-        let storyboard = UIStoryboard(name: Storyboards.Start.rawValue, bundle: nil)
+        let storyboard = UIStoryboard(name: Storyboards.Home.rawValue, bundle: nil)
         
         if let HomeViewController = storyboard.instantiateViewController(withIdentifier: HomeViewController.name) as? HomeViewController {
             
