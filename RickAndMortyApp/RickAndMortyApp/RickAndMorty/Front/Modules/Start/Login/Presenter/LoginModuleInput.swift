@@ -6,6 +6,6 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol LoginModuleInput: class {
+protocol LoginModuleInput: AnyObject {
 
 }

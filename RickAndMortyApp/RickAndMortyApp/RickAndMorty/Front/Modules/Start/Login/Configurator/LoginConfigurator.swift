@@ -17,15 +17,17 @@ class LoginModuleConfigurator {
         }
     }
 
-    private func configure(viewController: LoginViewController) {
+    func configure(viewController: LoginViewController) {
 
         let router = LoginRouter()
 
         let presenter = LoginPresenter()
+        
         presenter.view = viewController
         presenter.router = router
 
         let interactor = LoginInteractor()
+        
         interactor.output = presenter
 
         presenter.interactor = interactor
