@@ -10,4 +10,9 @@ class LoginInteractor: LoginInteractorInput {
 
     weak var output: LoginInteractorOutput!
 
+    func login() {
+        
+        // TODO: The connection will be worked on in a next PR
+        output.didLogin()
+    }
 }

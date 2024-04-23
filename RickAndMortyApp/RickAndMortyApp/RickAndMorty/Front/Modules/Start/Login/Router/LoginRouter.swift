@@ -6,6 +6,24 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-class LoginRouter: LoginRouterInput {
+import UIKit
 
+class LoginRouter: LoginRouterInput {
+    
+    func routeToHome() {
+        let appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
+        let storyboard = UIStoryboard(name: Storyboards.Start.rawValue, bundle: nil)
+        
+        if let HomeViewController = storyboard.instantiateViewController(withIdentifier: HomeViewController.name) as? HomeViewController {
+            
+            let configurator = HomeModuleConfigurator()
+            
+            configurator.configure(viewController: HomeViewController)
+            
+            appDelegate?.window?.rootViewController = HomeViewController
+            
+            appDelegate?.window?.makeKeyAndVisible()
+        }
+    }
 }
