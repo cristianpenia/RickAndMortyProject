@@ -8,13 +8,14 @@
 
 import UIKit
 
-class LoginViewController: UIViewController, LoginViewInput {
+class LoginViewController: BaseViewController, LoginViewInput {
 
     var output: LoginViewOutput!
 
     // MARK: Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         output.viewIsReady()
     }
 

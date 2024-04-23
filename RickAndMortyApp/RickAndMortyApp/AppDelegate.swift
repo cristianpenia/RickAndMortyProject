@@ -10,10 +10,29 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    
+    // MARK: Properties
+    
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        let storyboard = UIStoryboard(name: "Start", bundle: nil)
+        if let loginViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController {
+            
+            let configurator = LoginModuleConfigurator()
+            
+            configurator.configure(viewController: loginViewController)
+            
+            self.window?.rootViewController = loginViewController
+            
+            self.window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 
