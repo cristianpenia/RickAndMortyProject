@@ -1,5 +1,5 @@
 //
-//  RickAndMortyAppLoginRickAndMortyAppLoginConfigurator.swift
+//  LoginConfigurator.swift
 //  RickAndMortyApp
 //
 //  Created by Cristian Peña on 22/04/2024.
@@ -31,6 +31,7 @@ class LoginModuleConfigurator {
         interactor.output = presenter
 
         presenter.interactor = interactor
+        
         viewController.output = presenter
     }
 
