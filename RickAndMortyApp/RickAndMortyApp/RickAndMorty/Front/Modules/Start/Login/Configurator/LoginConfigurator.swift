@@ -20,6 +20,8 @@ class LoginModuleConfigurator {
     func configure(viewController: LoginViewController) {
 
         let router = LoginRouter()
+        
+        router.viewController = viewController
 
         let presenter = LoginPresenter()
         

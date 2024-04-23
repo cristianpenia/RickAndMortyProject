@@ -43,6 +43,8 @@
 		A630B1BB2BD7847F00F5777C /* ListViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630B1BA2BD7847F00F5777C /* ListViewControllers.swift */; };
 		A630B1BD2BD7848900F5777C /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630B1BC2BD7848900F5777C /* Storyboards.swift */; };
 		A630B1C12BD81DD900F5777C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A630B1C02BD81DD900F5777C /* Home.storyboard */; };
+		A630B1C42BD83EC200F5777C /* UIApplication-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630B1C32BD83EC200F5777C /* UIApplication-extension.swift */; };
+		A630B1C62BD83EEF00F5777C /* UIStoryboard-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630B1C52BD83EEF00F5777C /* UIStoryboard-extension.swift */; };
 		A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */ = {isa = PBXBuildFile; productRef = A66E70982BD2F49B0073E88B /* RickAndMortyUI */; };
 		A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A66E709A2BD2F49B0073E88B /* SnapKit */; };
 		A704BEFE154491F0EA21B8C0 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37407F7077CF987E4AEFFCCC /* LoginInteractorInput.swift */; };
@@ -115,6 +117,8 @@
 		A630B1BA2BD7847F00F5777C /* ListViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllers.swift; sourceTree = "<group>"; };
 		A630B1BC2BD7848900F5777C /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		A630B1C02BD81DD900F5777C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		A630B1C32BD83EC200F5777C /* UIApplication-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication-extension.swift"; sourceTree = "<group>"; };
+		A630B1C52BD83EEF00F5777C /* UIStoryboard-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard-extension.swift"; sourceTree = "<group>"; };
 		AEE223E2B7C3C5800BC167BA /* LoginInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		B3603404C065F48B2862FD5B /* LoginPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
 		B6BC4B32C349FE4EB85590CC /* LoginViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
@@ -397,6 +401,15 @@
 			path = RickAndMorty;
 			sourceTree = "<group>";
 		};
+		A630B1C22BD83EB300F5777C /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A630B1C52BD83EEF00F5777C /* UIStoryboard-extension.swift */,
+				A630B1C32BD83EC200F5777C /* UIApplication-extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A66E70952BD2F3680073E88B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +491,7 @@
 		EB8FB4A62BD3056400F3037F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A630B1C22BD83EB300F5777C /* Extension */,
 				EB8FB4A92BD3058300F3037F /* Router.swift */,
 				EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */,
 				A630B1BA2BD7847F00F5777C /* ListViewControllers.swift */,
@@ -692,6 +706,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A630B1C42BD83EC200F5777C /* UIApplication-extension.swift in Sources */,
 				EB8FB4AF2BD30C0B00F3037F /* BaseViewController.swift in Sources */,
 				EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */,
 				A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */,
@@ -699,6 +714,7 @@
 				4C3AC4A4437BEAB24C55767C /* LoginViewInput.swift in Sources */,
 				C3ECC949753BF15EE593AEC3 /* LoginViewOutput.swift in Sources */,
 				0FE9D22D9AB5B71DDA522EC3 /* LoginViewController.swift in Sources */,
+				A630B1C62BD83EEF00F5777C /* UIStoryboard-extension.swift in Sources */,
 				3CFD52ED16F0BBD58713FF94 /* LoginModuleInput.swift in Sources */,
 				E6DDA2889985FC08218E3275 /* LoginPresenter.swift in Sources */,
 				A704BEFE154491F0EA21B8C0 /* LoginInteractorInput.swift in Sources */,
@@ -919,7 +935,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "R & M";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -950,7 +966,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "R & M";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Start;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
