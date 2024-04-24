@@ -6,6 +6,8 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
+import UIKit
+
 class LoginPresenter: LoginModuleInput{
 
     weak var view: LoginViewInput!
@@ -24,6 +26,8 @@ extension LoginPresenter: LoginViewOutput {
     }
     
     func didTapSendButton() {
+        
+        view.showLoading()
         interactor.login()
     }
 }
@@ -31,7 +35,12 @@ extension LoginPresenter: LoginViewOutput {
 extension LoginPresenter: LoginInteractorOutput {
     
     func didLogin() {
-        router.routeToHome()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            
+            self.view.hideLoading()
+            self.router.routeToHome()
+        }
     }
     
     func didFailLogin() {

@@ -17,7 +17,7 @@ public class LoadingViewController: UIViewController {
     var viewBackground: UIView! {
         didSet {
             viewBackground.backgroundColor = Color.viewControllerBackground
-            viewBackground.layer.cornerRadius = 36
+            viewBackground.layer.cornerRadius = 48
         }
     }
     
@@ -37,7 +37,7 @@ public class LoadingViewController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = Color.viewControllerBackground
+        view.backgroundColor = Color.backgroundLine
         
         addViews()
     }
@@ -64,7 +64,7 @@ public class LoadingViewController: UIViewController {
         view.addSubview(viewBackground)
         
         viewBackground.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(24)
+            make.edges.equalToSuperview().inset(6)
         }
     }
     
@@ -72,7 +72,7 @@ public class LoadingViewController: UIViewController {
         
         animationView = LottieAnimationView(name: Media.Lottie.loading, bundle: Bundle.module)
         
-        view.addSubview(animationView)
+        viewBackground.addSubview(animationView)
         
         animationView.snp.makeConstraints { make in
             make.size.equalTo(260)

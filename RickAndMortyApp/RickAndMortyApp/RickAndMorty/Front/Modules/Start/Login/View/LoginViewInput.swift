@@ -7,11 +7,8 @@
 //
 
 protocol LoginViewInput: AnyObject {
-
-    /**
-        @author Cristian Peña
-        Setup initial state of the view
-    */
-
+    
     func setupInitialState()
+    func showLoading()
+    func hideLoading()
 }

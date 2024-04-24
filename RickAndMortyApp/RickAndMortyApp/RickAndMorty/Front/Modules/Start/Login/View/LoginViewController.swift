@@ -80,4 +80,12 @@ extension LoginViewController: LoginViewInput {
     
     func setupInitialState() {
     }
+    
+    func showLoading() {
+        showViewLoading()
+    }
+    
+    func hideLoading() {
+        hideViewLoading()
+    }
 }
