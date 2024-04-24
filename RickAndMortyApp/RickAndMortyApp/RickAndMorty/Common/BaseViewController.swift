@@ -14,8 +14,6 @@ class BaseViewController: UIViewController {
     
     // MARK: Properties
     
-    let name = name
-    
     
     // MARK: Views
     
@@ -25,6 +23,8 @@ class BaseViewController: UIViewController {
             viewBackground.layer.cornerRadius = 48
         }
     }
+    
+    var loadingViewController: LoadingViewController!
     
     
     // Lifecycle
@@ -53,6 +53,36 @@ class BaseViewController: UIViewController {
         
         viewBackground.snp.makeConstraints { make in
             make.edges.equalToSuperview().inset(6)
+        }
+    }
+    
+    private func addLoading() {
+        loadingViewController = LoadingViewController()
+        
+        viewBackground.addSubview(loadingViewController.view)
+        viewBackground.bringSubviewToFront(loadingViewController.view)
+
+        loadingViewController.view.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+    
+    
+    // MARK: Public Methods
+    
+    public func showViewLoading() {
+        addLoading()
+    }
+    
+    public func hideViewLoading() {
+        if let loadingView = self.loadingViewController.view.viewWithTag(100) {
+            UIView.animate(withDuration: 0.3, animations: {
+                loadingView.alpha = 0
+            }) { completed in
+                if completed {
+                    loadingView.removeFromSuperview()
+                }
+            }
         }
     }
 }

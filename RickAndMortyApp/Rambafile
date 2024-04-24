@@ -4,7 +4,7 @@ company: RickAndMortyApp
 ### Xcode project settings
 project_name: RickAndMortyApp
 xcodeproj_path: RickAndMortyApp.xcodeproj
-prefix: RickAndMortyApp
+prefix:
 
 ### Code generation settings section
 # The main project target name
@@ -30,3 +30,7 @@ test_group_path: RickAndMortyAppTests/Front/Modules/[NAME_MODULE]
 templates:
 - {name: mvvm_controller}
 - {name: swifty_viper}
+
+
+## COMMAND  
+# generamba gen [NAME] swifty_viper

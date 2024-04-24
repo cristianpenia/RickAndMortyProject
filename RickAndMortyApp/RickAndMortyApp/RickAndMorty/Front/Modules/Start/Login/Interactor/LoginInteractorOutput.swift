@@ -10,4 +10,6 @@ import Foundation
 
 protocol LoginInteractorOutput: AnyObject {
 
+    func didLogin()
+    func didFailLogin()
 }

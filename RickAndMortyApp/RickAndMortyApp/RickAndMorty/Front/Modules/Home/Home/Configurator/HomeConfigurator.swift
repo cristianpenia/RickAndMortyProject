@@ -1,39 +1,34 @@
 //
-//  LoginConfigurator.swift
+//  HomeHomeConfigurator.swift
 //  RickAndMortyApp
 //
-//  Created by Cristian Peña on 22/04/2024.
+//  Created by Cristian Peña on 23/04/2024.
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
 import UIKit
 
-class LoginModuleConfigurator {
+class HomeModuleConfigurator {
 
     func configureModuleForViewInput<UIViewController>(viewInput: UIViewController) {
 
-        if let viewController = viewInput as? LoginViewController {
+        if let viewController = viewInput as? HomeViewController {
             configure(viewController: viewController)
         }
     }
 
-    func configure(viewController: LoginViewController) {
+    func configure(viewController: HomeViewController) {
 
-        let router = LoginRouter()
-        
-        router.viewController = viewController
+        let router = HomeRouter()
 
-        let presenter = LoginPresenter()
-        
+        let presenter = HomePresenter()
         presenter.view = viewController
         presenter.router = router
 
-        let interactor = LoginInteractor()
-        
+        let interactor = HomeInteractor()
         interactor.output = presenter
 
         presenter.interactor = interactor
-        
         viewController.output = presenter
     }
 

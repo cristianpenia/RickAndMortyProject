@@ -7,11 +7,10 @@
 //
 
 protocol LoginViewOutput {
-
-    /**
-        @author Cristian Peña
-        Notify presenter that view is ready
-    */
-
+    
     func viewIsReady()
+    
+    func didTapInformationButton()
+    
+    func didTapSendButton()
 }

@@ -18,7 +18,7 @@ public struct Media {
     
     public struct Image {
         
-        static let rickAndMorty = UIImage(named: Name.rickAndMorty)
+        public static let rickAndMorty = UIImage(named: Name.rickAndMorty, in: .module, with: nil)
     }
     
     public struct Lottie {
