@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qkp-On-D21">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,7 +9,29 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--Menu Tab Bar View Controller-->
+        <scene sceneID="0ap-Wx-Hxk">
+            <objects>
+                <tabBarController storyboardIdentifier="MenuTabBarViewController" id="Qkp-On-D21" customClass="MenuTabBarViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O9V-uE-XNu">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="gvC-iM-bAD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y5t-C6-IQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="pu8-Ag-Slg" customClass="MenuTabBarModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="menutabbarViewController" destination="Qkp-On-D21" id="79p-Qb-ZtG"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="-1198" y="-620"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -36,6 +58,8 @@
                             <constraint firstItem="ced-VD-eAv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vHZ-NA-pKQ"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="nU7-9F-72J"/>
+                    <navigationItem key="navigationItem" id="dC4-kI-2HR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="Zgn-JF-3lG" customClass="HomeModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
@@ -44,7 +68,7 @@
                     </connections>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="140" y="5"/>
+            <point key="canvasLocation" x="48" y="-1337"/>
         </scene>
     </scenes>
     <resources>

@@ -7,27 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0080C948E0E3D4B7ED8A1C79 /* MenuTabBarViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D0D48B786DCD4E145820B93 /* MenuTabBarViewTests.swift */; };
 		0411B0A38E6A3C7D9A83FC3C /* HomeRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5105DF42DEB5C9B2571D612 /* HomeRouterInput.swift */; };
 		072E17205F2ABD63E8BDFCD1 /* HomeViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45DF552ED6428FB7552EE2CA /* HomeViewInput.swift */; };
 		0FE9D22D9AB5B71DDA522EC3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60861EF989E94ABB0021BAA9 /* LoginViewController.swift */; };
+		1A2C71C32DB3B1A45E6C7C53 /* MenuTabBarInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C610FD77703644509742C1E6 /* MenuTabBarInteractorTests.swift */; };
 		1B9091457B48702891512B71 /* LoginPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3603404C065F48B2862FD5B /* LoginPresenterTests.swift */; };
 		2095E90A45E7E3AE423726BA /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14C73421A23A1E31BAA0C6E6 /* HomeViewTests.swift */; };
 		21F98F4A38D0797446EB5109 /* HomeViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8371774ADB815FB83E5D831 /* HomeViewOutput.swift */; };
 		2300807D231C32A98ACE0472 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 651C9A4E74F1A1D7A0EA9BBB /* HomeInteractor.swift */; };
+		27231322AE5C11D16E9246D9 /* MenuTabBarInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF05DC979E6827902C0817 /* MenuTabBarInteractorOutput.swift */; };
 		2A362AFBC5B19702FFB4416C /* LoginViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6BC4B32C349FE4EB85590CC /* LoginViewTests.swift */; };
 		36E60B511B522DF4A931AF64 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A74F15EC7D1378DE35D494A /* LoginConfigurator.swift */; };
+		3BE4274685CC66A03DE7DFC1 /* MenuTabBarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A6A3E7275B2D268206626B /* MenuTabBarRouter.swift */; };
 		3CE0F85D017CA752A1CA513A /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FD6F7DBABDCE9C56AD50687 /* HomeInteractorTests.swift */; };
 		3CFD52ED16F0BBD58713FF94 /* LoginModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6847F8B07BE45FB9F35812CF /* LoginModuleInput.swift */; };
 		422BAE5D085872C9EC2B9EEF /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E7AD56412CFB8161AB9A1BA /* HomePresenter.swift */; };
+		42502146F83AD1A38281F866 /* MenuTabBarViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E118236EC4F8ECDE9AADEE /* MenuTabBarViewInput.swift */; };
 		4C3AC4A4437BEAB24C55767C /* LoginViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01AD9157435DECB3B6707605 /* LoginViewInput.swift */; };
+		4E74F304A425D1FC3226EA25 /* MenuTabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057F4391B260256FB6971110 /* MenuTabBarPresenter.swift */; };
+		4FE6CAC6AF4B053CCF7CD51B /* MenuTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 734B930A75DD0D2021C50F03 /* MenuTabBarViewController.swift */; };
 		541F7FD10CDD8F38C90CC372 /* HomeInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EF0BDC6A35807AB23890A7 /* HomeInitializer.swift */; };
 		58B24B342F5ACAE4F11AF689 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 907E09480F08778EE9B73366 /* LoginInteractor.swift */; };
 		6009EFF825B38979C2D44322 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F4D8F8965B8349C0141B14 /* HomePresenterTests.swift */; };
 		602DA9BE3CCCB732034CBE49 /* HomeConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7EB4E9C64CADE503752FB6 /* HomeConfiguratorTests.swift */; };
+		6AC79172911B0F90A1D3F8FD /* MenuTabBarRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B56B0CCA1695FCC87A4228 /* MenuTabBarRouterTests.swift */; };
 		6CCB61A387BD9A7B8D94B38C /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D7476C004A668896EB6EA6 /* LoginRouter.swift */; };
 		7881E467D0F30DEC50A40982 /* HomeInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B30D555AB0B62B430F1C2D1 /* HomeInteractorInput.swift */; };
 		7F52789677D36A9B65A9B27C /* LoginInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41174C4910481EF71C7558BA /* LoginInteractorOutput.swift */; };
 		8219CFE21C02D2EB703980BF /* LoginInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09ACEA385910F5DD44A79363 /* LoginInitializer.swift */; };
+		88D2E8671A7BD57C1643A9DE /* MenuTabBarConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B0DD38B44CCD04BC3EE9CC /* MenuTabBarConfiguratorTests.swift */; };
 		93959AFDA1A93EF5988BBD36 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 731926525FBC82C0672951D1 /* HomeRouter.swift */; };
 		947F145BBD5A98367DFCBBC6 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957E02A89AD43BF18573AF0F /* HomeConfigurator.swift */; };
 		9DB993DD57E5BC0850C4958A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F8C1211349EBEA3FCA277 /* HomeViewController.swift */; };
@@ -40,6 +49,7 @@
 		A60D6A122BD2F0C10073C826 /* RickAndMortyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */; };
 		A60D6A142BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */; };
 		A60D6A232BD2F1300073C826 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A60D6A222BD2F1300073C826 /* Lottie */; };
+		A62FF10B2BD963CC00259FCD /* ServiceCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62FF10A2BD963CC00259FCD /* ServiceCoordinator.swift */; };
 		A630B1BB2BD7847F00F5777C /* ListViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630B1BA2BD7847F00F5777C /* ListViewControllers.swift */; };
 		A630B1BD2BD7848900F5777C /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A630B1BC2BD7848900F5777C /* Storyboards.swift */; };
 		A630B1C12BD81DD900F5777C /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A630B1C02BD81DD900F5777C /* Home.storyboard */; };
@@ -48,12 +58,20 @@
 		A66E70992BD2F49B0073E88B /* RickAndMortyUI in Frameworks */ = {isa = PBXBuildFile; productRef = A66E70982BD2F49B0073E88B /* RickAndMortyUI */; };
 		A66E709B2BD2F49B0073E88B /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = A66E709A2BD2F49B0073E88B /* SnapKit */; };
 		A704BEFE154491F0EA21B8C0 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37407F7077CF987E4AEFFCCC /* LoginInteractorInput.swift */; };
+		A75750EF4663FCE8D24A4152 /* MenuTabBarInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1025BC714596043A845E229 /* MenuTabBarInteractorInput.swift */; };
+		AB9C3F11AE8C64CA633071B5 /* MenuTabBarInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A88ACE1B82DDE58FF9B765 /* MenuTabBarInitializer.swift */; };
 		B3D837094FE022DE9F8A7CDC /* HomeRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47C56D6ADC950ADDD361874 /* HomeRouterTests.swift */; };
+		B612D8B0C887BA3BE1DBFE73 /* MenuTabBarConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E08259128FE7BCF6FE5AB1 /* MenuTabBarConfigurator.swift */; };
 		B8DB60F2BD6F0DEA86B6246C /* HomeInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919FDE03979E03E8844469DC /* HomeInteractorOutput.swift */; };
+		C3218C3835BE66FD3EB28C9E /* MenuTabBarRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F5FC010DCF5F5A1CECDD122 /* MenuTabBarRouterInput.swift */; };
 		C3ECC949753BF15EE593AEC3 /* LoginViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421D225419E14750D8D9987E /* LoginViewOutput.swift */; };
 		C513D0965B24128850A76399 /* LoginInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE223E2B7C3C5800BC167BA /* LoginInteractorTests.swift */; };
+		C6D5B9AE17A1DCCA8467AED3 /* MenuTabBarPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 688E71E10BBA8A84BF467C21 /* MenuTabBarPresenterTests.swift */; };
 		C70B30D3F711D3CF8BFAC0F7 /* HomeModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F421625A1C789DCF5EB2F301 /* HomeModuleInput.swift */; };
+		CA193B105FDC89BDB4C70E14 /* MenuTabBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4300173A90115B194D74AD1 /* MenuTabBarInteractor.swift */; };
+		D695507568995EB1D8C79CC5 /* MenuTabBarModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AE824764576E48E246EB00 /* MenuTabBarModuleInput.swift */; };
 		DA70B8042564400A8E3CB4D9 /* LoginConfiguratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B634332974434C1A326ED5 /* LoginConfiguratorTests.swift */; };
+		DFFB4117F35901B689D9776E /* MenuTabBarViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D329A8596EFF1D4BAFB1383B /* MenuTabBarViewOutput.swift */; };
 		E6DDA2889985FC08218E3275 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1932D670945CC48CDE760197 /* LoginPresenter.swift */; };
 		EB8FB4AA2BD3058300F3037F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4A92BD3058300F3037F /* Router.swift */; };
 		EB8FB4AF2BD30C0B00F3037F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */; };
@@ -79,29 +97,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00AE824764576E48E246EB00 /* MenuTabBarModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarModuleInput.swift; sourceTree = "<group>"; };
 		01AD9157435DECB3B6707605 /* LoginViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewInput.swift; sourceTree = "<group>"; };
+		057F4391B260256FB6971110 /* MenuTabBarPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarPresenter.swift; sourceTree = "<group>"; };
 		09ACEA385910F5DD44A79363 /* LoginInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInitializer.swift; sourceTree = "<group>"; };
+		12E118236EC4F8ECDE9AADEE /* MenuTabBarViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarViewInput.swift; sourceTree = "<group>"; };
+		14A6A3E7275B2D268206626B /* MenuTabBarRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarRouter.swift; sourceTree = "<group>"; };
 		14C73421A23A1E31BAA0C6E6 /* HomeViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		1932D670945CC48CDE760197 /* LoginPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		1E7AD56412CFB8161AB9A1BA /* HomePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		1FD6F7DBABDCE9C56AD50687 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		27DF05DC979E6827902C0817 /* MenuTabBarInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarInteractorOutput.swift; sourceTree = "<group>"; };
 		308FE61D52AB1482B43835F3 /* LoginRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouterInput.swift; sourceTree = "<group>"; };
 		37407F7077CF987E4AEFFCCC /* LoginInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorInput.swift; sourceTree = "<group>"; };
 		41174C4910481EF71C7558BA /* LoginInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorOutput.swift; sourceTree = "<group>"; };
 		421D225419E14750D8D9987E /* LoginViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewOutput.swift; sourceTree = "<group>"; };
 		45DF552ED6428FB7552EE2CA /* HomeViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewInput.swift; sourceTree = "<group>"; };
+		48A88ACE1B82DDE58FF9B765 /* MenuTabBarInitializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarInitializer.swift; sourceTree = "<group>"; };
 		4A74F15EC7D1378DE35D494A /* LoginConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		57B56B0CCA1695FCC87A4228 /* MenuTabBarRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarRouterTests.swift; sourceTree = "<group>"; };
 		60861EF989E94ABB0021BAA9 /* LoginViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		61B634332974434C1A326ED5 /* LoginConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginConfiguratorTests.swift; sourceTree = "<group>"; };
 		651C9A4E74F1A1D7A0EA9BBB /* HomeInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
 		6847F8B07BE45FB9F35812CF /* LoginModuleInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginModuleInput.swift; sourceTree = "<group>"; };
+		688E71E10BBA8A84BF467C21 /* MenuTabBarPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarPresenterTests.swift; sourceTree = "<group>"; };
 		6B30D555AB0B62B430F1C2D1 /* HomeInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorInput.swift; sourceTree = "<group>"; };
 		6C0F8C1211349EBEA3FCA277 /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		731926525FBC82C0672951D1 /* HomeRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		734B930A75DD0D2021C50F03 /* MenuTabBarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarViewController.swift; sourceTree = "<group>"; };
+		7D0D48B786DCD4E145820B93 /* MenuTabBarViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarViewTests.swift; sourceTree = "<group>"; };
 		907E09480F08778EE9B73366 /* LoginInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		919FDE03979E03E8844469DC /* HomeInteractorOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeInteractorOutput.swift; sourceTree = "<group>"; };
 		957E02A89AD43BF18573AF0F /* HomeConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeConfigurator.swift; sourceTree = "<group>"; };
 		95D7476C004A668896EB6EA6 /* LoginRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		9F5FC010DCF5F5A1CECDD122 /* MenuTabBarRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarRouterInput.swift; sourceTree = "<group>"; };
 		A60D69ED2BD2F0C00073C826 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D69F02BD2F0C00073C826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,15 +143,22 @@
 		A60D6A0D2BD2F0C10073C826 /* RickAndMortyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITests.swift; sourceTree = "<group>"; };
 		A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A62FF10A2BD963CC00259FCD /* ServiceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCoordinator.swift; sourceTree = "<group>"; };
 		A630B1BA2BD7847F00F5777C /* ListViewControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllers.swift; sourceTree = "<group>"; };
 		A630B1BC2BD7848900F5777C /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		A630B1C02BD81DD900F5777C /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		A630B1C32BD83EC200F5777C /* UIApplication-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication-extension.swift"; sourceTree = "<group>"; };
 		A630B1C52BD83EEF00F5777C /* UIStoryboard-extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard-extension.swift"; sourceTree = "<group>"; };
+		A6E08259128FE7BCF6FE5AB1 /* MenuTabBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarConfigurator.swift; sourceTree = "<group>"; };
 		AEE223E2B7C3C5800BC167BA /* LoginInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginInteractorTests.swift; sourceTree = "<group>"; };
 		B3603404C065F48B2862FD5B /* LoginPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginPresenterTests.swift; sourceTree = "<group>"; };
+		B4300173A90115B194D74AD1 /* MenuTabBarInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarInteractor.swift; sourceTree = "<group>"; };
 		B6BC4B32C349FE4EB85590CC /* LoginViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoginViewTests.swift; sourceTree = "<group>"; };
+		C0B0DD38B44CCD04BC3EE9CC /* MenuTabBarConfiguratorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarConfiguratorTests.swift; sourceTree = "<group>"; };
+		C1025BC714596043A845E229 /* MenuTabBarInteractorInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarInteractorInput.swift; sourceTree = "<group>"; };
 		C5105DF42DEB5C9B2571D612 /* HomeRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterInput.swift; sourceTree = "<group>"; };
+		C610FD77703644509742C1E6 /* MenuTabBarInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarInteractorTests.swift; sourceTree = "<group>"; };
+		D329A8596EFF1D4BAFB1383B /* MenuTabBarViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarViewOutput.swift; sourceTree = "<group>"; };
 		D47C56D6ADC950ADDD361874 /* HomeRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeRouterTests.swift; sourceTree = "<group>"; };
 		D6F4D8F8965B8349C0141B14 /* HomePresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
 		D8371774ADB815FB83E5D831 /* HomeViewOutput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewOutput.swift; sourceTree = "<group>"; };
@@ -162,12 +198,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04977E9BEF62E88B3CD872C9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C1025BC714596043A845E229 /* MenuTabBarInteractorInput.swift */,
+				27DF05DC979E6827902C0817 /* MenuTabBarInteractorOutput.swift */,
+				B4300173A90115B194D74AD1 /* MenuTabBarInteractor.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		0B7D192949CE798B2C04100C /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				51F931D341BBB0AF60F85634 /* Login */,
 			);
 			path = Start;
+			sourceTree = "<group>";
+		};
+		20C6CD4646426D2556149A87 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				57B56B0CCA1695FCC87A4228 /* MenuTabBarRouterTests.swift */,
+			);
+			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		20D9139579866BD1EFC96B40 /* Presenter */ = {
@@ -178,10 +234,20 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		2662E1CDE432FB1FCF09F74E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				688E71E10BBA8A84BF467C21 /* MenuTabBarPresenterTests.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		2CBB7B41F3A430622EA1B335 /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				7515AA40D6ECACD07140DD13 /* Home */,
+				B6A63160A697741CBFFDCD4B /* MenuTabBar */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -213,6 +279,19 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		420E2CC39B10DB017BE4560C /* MenuTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F9C67B3BCF399DB849FAA317 /* View */,
+				D4BC90FB661F097533A41492 /* Presenter */,
+				04977E9BEF62E88B3CD872C9 /* Interactor */,
+				60DB4C35D6FE6DDEE91EC716 /* Router */,
+				5702BC1681C2FF87D957DDBF /* Configurator */,
+			);
+			name = MenuTabBar;
+			path = MenuTabBar;
+			sourceTree = "<group>";
+		};
 		51F931D341BBB0AF60F85634 /* Login */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,6 +321,16 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		5702BC1681C2FF87D957DDBF /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A6E08259128FE7BCF6FE5AB1 /* MenuTabBarConfigurator.swift */,
+				48A88ACE1B82DDE58FF9B765 /* MenuTabBarInitializer.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		5709AC6921A633AA6DE412CD /* Front */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,6 +349,16 @@
 				53312F018289167D860CA290 /* Configurator */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		60DB4C35D6FE6DDEE91EC716 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9F5FC010DCF5F5A1CECDD122 /* MenuTabBarRouterInput.swift */,
+				14A6A3E7275B2D268206626B /* MenuTabBarRouter.swift */,
+			);
+			name = Router;
+			path = Router;
 			sourceTree = "<group>";
 		};
 		63F9EA8FB6CBA76B22BB6E7B /* View */ = {
@@ -401,6 +500,14 @@
 			path = RickAndMorty;
 			sourceTree = "<group>";
 		};
+		A62FF1092BD9631800259FCD /* ServiceCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				A62FF10A2BD963CC00259FCD /* ServiceCoordinator.swift */,
+			);
+			path = ServiceCoordinator;
+			sourceTree = "<group>";
+		};
 		A630B1C22BD83EB300F5777C /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -460,6 +567,19 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		B6A63160A697741CBFFDCD4B /* MenuTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				DB5D9715EC8E67255CBEFB6E /* Configurator */,
+				D4C2950AE9E7F4FE4E9A62A5 /* View */,
+				D81846A916975734898E810A /* Interactor */,
+				2662E1CDE432FB1FCF09F74E /* Presenter */,
+				20C6CD4646426D2556149A87 /* Router */,
+			);
+			name = MenuTabBar;
+			path = MenuTabBar;
+			sourceTree = "<group>";
+		};
 		BC3B7D118CC6387C7C1F245B /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -478,6 +598,34 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		D4BC90FB661F097533A41492 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				00AE824764576E48E246EB00 /* MenuTabBarModuleInput.swift */,
+				057F4391B260256FB6971110 /* MenuTabBarPresenter.swift */,
+			);
+			name = Presenter;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		D4C2950AE9E7F4FE4E9A62A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7D0D48B786DCD4E145820B93 /* MenuTabBarViewTests.swift */,
+			);
+			name = View;
+			path = View;
+			sourceTree = "<group>";
+		};
+		D81846A916975734898E810A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C610FD77703644509742C1E6 /* MenuTabBarInteractorTests.swift */,
+			);
+			name = Interactor;
+			path = Interactor;
+			sourceTree = "<group>";
+		};
 		D96C4505031666608E7492D4 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,9 +636,19 @@
 			path = Interactor;
 			sourceTree = "<group>";
 		};
+		DB5D9715EC8E67255CBEFB6E /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				C0B0DD38B44CCD04BC3EE9CC /* MenuTabBarConfiguratorTests.swift */,
+			);
+			name = Configurator;
+			path = Configurator;
+			sourceTree = "<group>";
+		};
 		EB8FB4A62BD3056400F3037F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A62FF1092BD9631800259FCD /* ServiceCoordinator */,
 				A630B1C22BD83EB300F5777C /* Extension */,
 				EB8FB4A92BD3058300F3037F /* Router.swift */,
 				EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */,
@@ -523,6 +681,7 @@
 			isa = PBXGroup;
 			children = (
 				5E77D0664963A2BC7CF4CD5A /* Home */,
+				420E2CC39B10DB017BE4560C /* MenuTabBar */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -555,6 +714,17 @@
 				1FD6F7DBABDCE9C56AD50687 /* HomeInteractorTests.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F9C67B3BCF399DB849FAA317 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				12E118236EC4F8ECDE9AADEE /* MenuTabBarViewInput.swift */,
+				D329A8596EFF1D4BAFB1383B /* MenuTabBarViewOutput.swift */,
+				734B930A75DD0D2021C50F03 /* MenuTabBarViewController.swift */,
+			);
+			name = View;
+			path = View;
 			sourceTree = "<group>";
 		};
 		FD0BD0D88BCB08C9CB464C26 /* Configurator */ = {
@@ -659,8 +829,8 @@
 			);
 			mainGroup = A60D69E42BD2F0C00073C826;
 			packageReferences = (
-				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */,
-				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */,
+				A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */,
 			);
 			productRefGroup = A60D69EE2BD2F0C00073C826 /* Products */;
 			projectDirPath = "";
@@ -726,6 +896,7 @@
 				A630B1BB2BD7847F00F5777C /* ListViewControllers.swift in Sources */,
 				36E60B511B522DF4A931AF64 /* LoginConfigurator.swift in Sources */,
 				8219CFE21C02D2EB703980BF /* LoginInitializer.swift in Sources */,
+				A62FF10B2BD963CC00259FCD /* ServiceCoordinator.swift in Sources */,
 				072E17205F2ABD63E8BDFCD1 /* HomeViewInput.swift in Sources */,
 				21F98F4A38D0797446EB5109 /* HomeViewOutput.swift in Sources */,
 				9DB993DD57E5BC0850C4958A /* HomeViewController.swift in Sources */,
@@ -738,6 +909,18 @@
 				93959AFDA1A93EF5988BBD36 /* HomeRouter.swift in Sources */,
 				947F145BBD5A98367DFCBBC6 /* HomeConfigurator.swift in Sources */,
 				541F7FD10CDD8F38C90CC372 /* HomeInitializer.swift in Sources */,
+				42502146F83AD1A38281F866 /* MenuTabBarViewInput.swift in Sources */,
+				DFFB4117F35901B689D9776E /* MenuTabBarViewOutput.swift in Sources */,
+				4FE6CAC6AF4B053CCF7CD51B /* MenuTabBarViewController.swift in Sources */,
+				D695507568995EB1D8C79CC5 /* MenuTabBarModuleInput.swift in Sources */,
+				4E74F304A425D1FC3226EA25 /* MenuTabBarPresenter.swift in Sources */,
+				A75750EF4663FCE8D24A4152 /* MenuTabBarInteractorInput.swift in Sources */,
+				27231322AE5C11D16E9246D9 /* MenuTabBarInteractorOutput.swift in Sources */,
+				CA193B105FDC89BDB4C70E14 /* MenuTabBarInteractor.swift in Sources */,
+				C3218C3835BE66FD3EB28C9E /* MenuTabBarRouterInput.swift in Sources */,
+				3BE4274685CC66A03DE7DFC1 /* MenuTabBarRouter.swift in Sources */,
+				B612D8B0C887BA3BE1DBFE73 /* MenuTabBarConfigurator.swift in Sources */,
+				AB9C3F11AE8C64CA633071B5 /* MenuTabBarInitializer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -756,6 +939,11 @@
 				3CE0F85D017CA752A1CA513A /* HomeInteractorTests.swift in Sources */,
 				6009EFF825B38979C2D44322 /* HomePresenterTests.swift in Sources */,
 				B3D837094FE022DE9F8A7CDC /* HomeRouterTests.swift in Sources */,
+				88D2E8671A7BD57C1643A9DE /* MenuTabBarConfiguratorTests.swift in Sources */,
+				0080C948E0E3D4B7ED8A1C79 /* MenuTabBarViewTests.swift in Sources */,
+				1A2C71C32DB3B1A45E6C7C53 /* MenuTabBarInteractorTests.swift in Sources */,
+				C6D5B9AE17A1DCCA8467AED3 /* MenuTabBarPresenterTests.swift in Sources */,
+				6AC79172911B0F90A1D3F8FD /* MenuTabBarRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1102,7 +1290,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+		A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
 			requirement = {
@@ -1110,7 +1298,7 @@
 				version = 5.7.1;
 			};
 		};
-		A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -1123,7 +1311,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		A60D6A222BD2F1300073C826 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = A60D6A212BD2F1300073C826 /* XCRemoteSwiftPackageReference "lottie-ios.git" */;
 			productName = Lottie;
 		};
 		A66E70982BD2F49B0073E88B /* RickAndMortyUI */ = {
@@ -1132,7 +1320,7 @@
 		};
 		A66E709A2BD2F49B0073E88B /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			package = A60D6A202BD2F11C0073C826 /* XCRemoteSwiftPackageReference "SnapKit.git" */;
 			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
