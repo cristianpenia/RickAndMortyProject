@@ -20,6 +20,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="gvC-iM-bAD"/>
+                        <segue destination="jBQ-8g-QQ2" kind="relationship" relationship="viewControllers" id="WpQ-sT-qC3"/>
+                        <segue destination="faw-qz-QAh" kind="relationship" relationship="viewControllers" id="icC-ta-MCY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5t-C6-IQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -31,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="-1198" y="-620"/>
         </scene>
-        <!--Store View Controller-->
+        <!--Item-->
         <scene sceneID="iXA-HR-TpY">
             <objects>
                 <viewController storyboardIdentifier="StoreViewController" id="jBQ-8g-QQ2" customClass="StoreViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -53,6 +55,7 @@
                             <constraint firstItem="fw2-FE-WNw" firstAttribute="centerY" secondItem="hOX-p4-qWe" secondAttribute="centerY" id="XL4-eT-dPI"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="K4O-Jn-vOQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7d-ka-APE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="wC3-Ds-Vrt" customClass="StoreModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
@@ -63,7 +66,7 @@
             </objects>
             <point key="canvasLocation" x="47" y="-620"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Item-->
         <scene sceneID="eA5-hM-t1E">
             <objects>
                 <viewController storyboardIdentifier="ProfileViewController" id="faw-qz-QAh" customClass="ProfileViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,6 +76,7 @@
                         <viewLayoutGuide key="safeArea" id="Zjb-1F-NEY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ysk-BD-hE4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbC-7h-UYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="6dh-bU-Ldp" customClass="ProfileModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
