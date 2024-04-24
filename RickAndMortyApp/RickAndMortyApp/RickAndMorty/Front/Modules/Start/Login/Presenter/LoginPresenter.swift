@@ -13,7 +13,6 @@ class LoginPresenter: LoginModuleInput{
     weak var view: LoginViewInput!
     var interactor: LoginInteractorInput!
     var router: LoginRouterInput!
-    
 }
 
 extension LoginPresenter: LoginViewOutput {
