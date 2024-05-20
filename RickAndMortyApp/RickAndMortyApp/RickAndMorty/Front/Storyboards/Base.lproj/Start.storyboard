@@ -65,7 +65,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXI-6N-EZd">
-                                <rect key="frame" x="323" y="79" width="50" height="42"/>
+                                <rect key="frame" x="323" y="63" width="50" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="TwI-52-9vx"/>
                                 </constraints>
@@ -82,7 +82,7 @@
                             <constraint firstItem="dmJ-f7-bYk" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="20" id="8ey-LH-Dq0"/>
                             <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="56I-LQ-XR8" secondAttribute="trailing" constant="20" id="Car-ZL-DxJ"/>
                             <constraint firstItem="56I-LQ-XR8" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="20" id="EBc-vt-p6y"/>
-                            <constraint firstItem="GXI-6N-EZd" firstAttribute="top" secondItem="taS-8O-Vro" secondAttribute="top" constant="20" id="cue-AA-vbh"/>
+                            <constraint firstItem="GXI-6N-EZd" firstAttribute="top" secondItem="taS-8O-Vro" secondAttribute="top" constant="4" id="cue-AA-vbh"/>
                             <constraint firstItem="taS-8O-Vro" firstAttribute="bottom" secondItem="56I-LQ-XR8" secondAttribute="bottom" constant="18" id="isc-TF-aZV"/>
                             <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="dmJ-f7-bYk" secondAttribute="trailing" constant="20" id="nDq-97-AIU"/>
                             <constraint firstItem="dmJ-f7-bYk" firstAttribute="centerY" secondItem="QSI-2d-PRf" secondAttribute="centerY" constant="-50" id="nLW-Y1-Ige"/>
@@ -114,7 +114,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
-            <color red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
