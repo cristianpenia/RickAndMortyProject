@@ -55,7 +55,7 @@
                             <constraint firstItem="fw2-FE-WNw" firstAttribute="centerY" secondItem="hOX-p4-qWe" secondAttribute="centerY" id="XL4-eT-dPI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="K4O-Jn-vOQ"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="storefront" catalog="system" id="K4O-Jn-vOQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7d-ka-APE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="wC3-Ds-Vrt" customClass="StoreModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
@@ -76,7 +76,7 @@
                         <viewLayoutGuide key="safeArea" id="Zjb-1F-NEY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="ysk-BD-hE4"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person" catalog="system" id="ysk-BD-hE4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbC-7h-UYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <customObject id="6dh-bU-Ldp" customClass="ProfileModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
@@ -114,7 +114,7 @@
                             <constraint firstItem="ced-VD-eAv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vHZ-NA-pKQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="nU7-9F-72J"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="nU7-9F-72J"/>
                     <navigationItem key="navigationItem" id="dC4-kI-2HR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,6 +128,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="storefront" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

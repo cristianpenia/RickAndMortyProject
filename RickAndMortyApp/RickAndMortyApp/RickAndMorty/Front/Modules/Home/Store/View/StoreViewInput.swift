@@ -6,7 +6,7 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol StoreViewInput: class {
+protocol StoreViewInput: AnyObject {
 
     /**
         @author Cristian Peña

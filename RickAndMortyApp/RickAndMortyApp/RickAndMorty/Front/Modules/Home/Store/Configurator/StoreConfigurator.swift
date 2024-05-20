@@ -17,7 +17,7 @@ class StoreModuleConfigurator {
         }
     }
 
-    private func configure(viewController: StoreViewController) {
+    func configure(viewController: StoreViewController) {
 
         let router = StoreRouter()
 

@@ -17,7 +17,7 @@ class ProfileModuleConfigurator {
         }
     }
 
-    private func configure(viewController: ProfileViewController) {
+    func configure(viewController: ProfileViewController) {
 
         let router = ProfileRouter()
 
