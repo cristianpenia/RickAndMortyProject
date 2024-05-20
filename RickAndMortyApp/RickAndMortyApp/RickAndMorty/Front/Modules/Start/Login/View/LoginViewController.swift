@@ -64,6 +64,9 @@ class LoginViewController: BaseViewController {
     // MARK: Private methods
     private func setupUI() {
         navigationController?.isNavigationBarHidden = true
+        
+        appImageView.layer.cornerRadius = appImageView.frame.height / 3
+        appImageView.clipsToBounds = true
     }
     
     // MARK: Actions
@@ -94,8 +97,8 @@ extension LoginViewController: LoginViewInput {
     }
     
     func showTooltip() {
-        let tooltip = TooltipView(text: "This is a tooltip message.")
-        tooltip.show(at: CGPoint(x: view.center.x, y: view.center.y - 20), in: view)
+        let tooltip = TooltipView(text: "This is a tooltip message.\nTest two")
+        tooltip.show(at: CGPoint(x: view.center.x, y: view.center.y - 220), in: view)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             tooltip.hide()

@@ -8,7 +8,7 @@
 import UIKit
 
 public class TooltipView: UIView {
-
+    
     private let label: UILabel = {
         let label = UILabel()
         label.textColor = .white
@@ -29,17 +29,50 @@ public class TooltipView: UIView {
     }
     
     private func setupView() {
-        backgroundColor = UIColor.black.withAlphaComponent(0.8)
+        backgroundColor = .clear
         layer.cornerRadius = 8
         addSubview(label)
         
         label.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
-            label.topAnchor.constraint(equalTo: topAnchor, constant: 8),
-            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -8),
-            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8),
-            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8)
+            label.topAnchor.constraint(equalTo: topAnchor, constant: 18),
+            label.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -12),
+            label.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 12),
+            label.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -12)
         ])
+    }
+    
+    public override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        let path = createTooltipPath(in: rect)
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = path.cgPath
+        shapeLayer.fillColor = UIColor.gray.withAlphaComponent(0.7).cgColor
+        layer.insertSublayer(shapeLayer, at: 0)
+    }
+    
+    private func createTooltipPath(in rect: CGRect) -> UIBezierPath {
+        let path = UIBezierPath()
+        let cornerRadius: CGFloat = 0.0 // Ajusta el radio de la esquina para darle la forma redondeada
+        let pointerSize: CGFloat = 10.0 // Ajusta el tamaño del puntero para que apunte hacia arriba
+
+        path.move(to: CGPoint(x: rect.midX - pointerSize, y: rect.minY + pointerSize)) // Mueve el puntero hacia abajo
+
+        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY)) // Agrega el puntero hacia arriba
+
+        path.addLine(to: CGPoint(x: rect.midX + pointerSize, y: rect.minY + pointerSize)) // Agrega el puntero hacia abajo
+
+        path.addArc(withCenter: CGPoint(x: rect.maxX - cornerRadius, y: rect.minY + pointerSize + cornerRadius), radius: cornerRadius, startAngle: CGFloat(3 * Double.pi / 2), endAngle: CGFloat(0), clockwise: true)
+
+        path.addArc(withCenter: CGPoint(x: rect.maxX - cornerRadius, y: rect.maxY - cornerRadius), radius: cornerRadius, startAngle: CGFloat(0), endAngle: CGFloat(Double.pi / 2), clockwise: true)
+
+        path.addArc(withCenter: CGPoint(x: rect.minX + cornerRadius, y: rect.maxY - cornerRadius), radius: cornerRadius, startAngle: CGFloat(Double.pi / 2), endAngle: CGFloat(Double.pi), clockwise: true)
+
+        path.addArc(withCenter: CGPoint(x: rect.minX + cornerRadius, y: rect.minY + pointerSize + cornerRadius), radius: cornerRadius, startAngle: CGFloat(Double.pi), endAngle: CGFloat(3 * Double.pi / 2), clockwise: true)
+
+        path.close()
+        
+        return path
     }
     
     public func show(at point: CGPoint, in view: UIView) {
@@ -69,3 +102,4 @@ public class TooltipView: UIView {
         }
     }
 }
+
