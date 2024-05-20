@@ -16,7 +16,7 @@ class LoginViewController: BaseViewController {
     
     @IBOutlet weak var informationButton: UIButton! {
         didSet {
-            informationButton.tintColor = .green
+            informationButton.tintColor = Color.green
         }
     }
     
@@ -41,6 +41,7 @@ class LoginViewController: BaseViewController {
     @IBOutlet weak var sendButton: UIButton! {
         didSet {
             sendButton.setTitle("Iniciar sesión", for: .normal) // TODO: In a next PR, chain management will be added
+            sendButton.backgroundColor = Color.green
         }
     }
     

@@ -9,6 +9,42 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="la2-ZV-6Ls">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" id="QPx-Zx-Cu5" customClass="SplashScreenViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFm-Rz-U2v">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Qh-hk-6ie">
+                                <rect key="frame" x="116.66666666666669" y="346" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="9Lb-e7-fNo"/>
+                                    <constraint firstAttribute="width" secondItem="1Qh-hk-6ie" secondAttribute="height" id="9RP-QN-g4d"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tyw-L5-LwF"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1Qh-hk-6ie" firstAttribute="centerX" secondItem="uFm-Rz-U2v" secondAttribute="centerX" id="6EB-St-caI"/>
+                            <constraint firstItem="1Qh-hk-6ie" firstAttribute="centerY" secondItem="uFm-Rz-U2v" secondAttribute="centerY" id="6o6-1l-bfu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rickAndMortyImage" destination="1Qh-hk-6ie" id="1m2-g0-51C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fLg-ec-yPH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="xtj-rN-1fX" customClass="SplashScreenModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="splashscreenViewController" destination="QPx-Zx-Cu5" id="muk-xz-fiv"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="117" y="-2"/>
+        </scene>
         <!--Login View Controller-->
         <scene sceneID="uOo-K3-XiC">
             <objects>
