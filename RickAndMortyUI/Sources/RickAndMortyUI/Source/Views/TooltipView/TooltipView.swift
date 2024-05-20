@@ -53,14 +53,14 @@ public class TooltipView: UIView {
     
     private func createTooltipPath(in rect: CGRect) -> UIBezierPath {
         let path = UIBezierPath()
-        let cornerRadius: CGFloat = 0.0 // Ajusta el radio de la esquina para darle la forma redondeada
-        let pointerSize: CGFloat = 10.0 // Ajusta el tamaño del puntero para que apunte hacia arriba
+        let cornerRadius: CGFloat = 0.0
+        let pointerSize: CGFloat = 10.0
 
-        path.move(to: CGPoint(x: rect.midX - pointerSize, y: rect.minY + pointerSize)) // Mueve el puntero hacia abajo
+        path.move(to: CGPoint(x: rect.midX - pointerSize, y: rect.minY + pointerSize))
 
-        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY)) // Agrega el puntero hacia arriba
+        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
 
-        path.addLine(to: CGPoint(x: rect.midX + pointerSize, y: rect.minY + pointerSize)) // Agrega el puntero hacia abajo
+        path.addLine(to: CGPoint(x: rect.midX + pointerSize, y: rect.minY + pointerSize)) 
 
         path.addArc(withCenter: CGPoint(x: rect.maxX - cornerRadius, y: rect.minY + pointerSize + cornerRadius), radius: cornerRadius, startAngle: CGFloat(3 * Double.pi / 2), endAngle: CGFloat(0), clockwise: true)
 
