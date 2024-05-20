@@ -55,12 +55,16 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+        
         output.viewIsReady()
     }
     
     
     // MARK: Private methods
-    
+    private func setupUI() {
+        navigationController?.isNavigationBarHidden = true
+    }
     
     // MARK: Actions
     
@@ -87,5 +91,14 @@ extension LoginViewController: LoginViewInput {
     
     func hideLoading() {
         hideViewLoading()
+    }
+    
+    func showTooltip() {
+        let tooltip = TooltipView(text: "This is a tooltip message.")
+        tooltip.show(at: CGPoint(x: view.center.x, y: view.center.y - 20), in: view)
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            tooltip.hide()
+        }
     }
 }

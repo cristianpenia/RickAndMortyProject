@@ -21,7 +21,7 @@ extension LoginPresenter: LoginViewOutput {
     }
     
     func didTapInformationButton() {
-        
+        view.showTooltip()
     }
     
     func didTapSendButton() {
@@ -35,6 +35,7 @@ extension LoginPresenter: LoginInteractorOutput {
     
     func didLogin() {
         
+        // TODO: The connection will be worked on in a next PR
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
             
             self.view.hideLoading()
