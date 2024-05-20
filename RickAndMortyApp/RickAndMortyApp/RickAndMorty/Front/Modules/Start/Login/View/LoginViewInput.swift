@@ -11,4 +11,5 @@ protocol LoginViewInput: AnyObject {
     func setupInitialState()
     func showLoading()
     func hideLoading()
+    func showTooltip()
 }
