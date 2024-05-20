@@ -20,6 +20,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="Y6W-OH-hqX" kind="relationship" relationship="viewControllers" id="gvC-iM-bAD"/>
+                        <segue destination="jBQ-8g-QQ2" kind="relationship" relationship="viewControllers" id="WpQ-sT-qC3"/>
+                        <segue destination="faw-qz-QAh" kind="relationship" relationship="viewControllers" id="icC-ta-MCY"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y5t-C6-IQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -30,6 +32,60 @@
                 </customObject>
             </objects>
             <point key="canvasLocation" x="-1198" y="-620"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="iXA-HR-TpY">
+            <objects>
+                <viewController storyboardIdentifier="StoreViewController" id="jBQ-8g-QQ2" customClass="StoreViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hOX-p4-qWe">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Store" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fw2-FE-WNw">
+                                <rect key="frame" x="176" y="415.66666666666669" width="41" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ki3-mN-XyX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fw2-FE-WNw" firstAttribute="centerX" secondItem="hOX-p4-qWe" secondAttribute="centerX" id="1fZ-Xq-fDQ"/>
+                            <constraint firstItem="fw2-FE-WNw" firstAttribute="centerY" secondItem="hOX-p4-qWe" secondAttribute="centerY" id="XL4-eT-dPI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="storefront" catalog="system" id="K4O-Jn-vOQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E7d-ka-APE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="wC3-Ds-Vrt" customClass="StoreModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="storeViewController" destination="jBQ-8g-QQ2" id="PcL-FO-bQM"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="47" y="-620"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="eA5-hM-t1E">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="faw-qz-QAh" customClass="ProfileViewController" customModule="RickAndMortyApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Zd-iu-nQb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Zjb-1F-NEY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person" catalog="system" id="ysk-BD-hE4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sbC-7h-UYB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <customObject id="6dh-bU-Ldp" customClass="ProfileModuleInitializer" customModule="RickAndMortyApp" customModuleProvider="target">
+                    <connections>
+                        <outlet property="profileViewController" destination="faw-qz-QAh" id="Hui-aL-qNb"/>
+                    </connections>
+                </customObject>
+            </objects>
+            <point key="canvasLocation" x="47" y="140"/>
         </scene>
         <!--Item-->
         <scene sceneID="s0d-6b-0kx">
@@ -58,7 +114,7 @@
                             <constraint firstItem="ced-VD-eAv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vHZ-NA-pKQ"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="nU7-9F-72J"/>
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="nU7-9F-72J"/>
                     <navigationItem key="navigationItem" id="dC4-kI-2HR"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -72,6 +128,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="storefront" catalog="system" width="128" height="111"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -13,6 +13,6 @@ class HomePresenter: HomeModuleInput, HomeViewOutput, HomeInteractorOutput {
     var router: HomeRouterInput!
 
     func viewIsReady() {
-
+        print("MSJ: se realiza el consumo desde HOME")
     }
 }

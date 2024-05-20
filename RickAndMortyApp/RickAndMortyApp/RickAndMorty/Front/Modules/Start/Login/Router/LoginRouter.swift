@@ -16,12 +16,6 @@ class LoginRouter: LoginRouterInput, Routable {
         
         if let rootViewController = viewController.navigationController?.viewControllers.first {
             
-//            replaceRoot(withIdentifier: HomeViewController.name,
-//                        type: HomeViewController.self,
-//                        in: .home,
-//                        from: rootViewController,
-//                        previousViewControllers: [],
-//                        moduleConfiguration: { _ in} )
             replaceRoot(withIdentifier: MenuTabBarViewController.name,
                         type: MenuTabBarViewController.self,
                         in: .home,
