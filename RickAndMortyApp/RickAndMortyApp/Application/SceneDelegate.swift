@@ -20,13 +20,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let storyboard = UIStoryboard(name: Storyboards.Start.rawValue, bundle: nil)
         
-        if let loginViewController = storyboard.instantiateViewController(withIdentifier: LoginViewController.name) as? LoginViewController {
+//        if let loginViewController = storyboard.instantiateViewController(withIdentifier: LoginViewController.name) as? LoginViewController {
+//            
+//            let configurator = LoginModuleConfigurator()
+//            
+//            configurator.configure(viewController: loginViewController)
+//            
+//            self.window?.rootViewController = UINavigationController(rootViewController: loginViewController)
+//            
+//            self.window?.makeKeyAndVisible()
+//        }
+        
+        if let splashScreenViewController = storyboard.instantiateViewController(withIdentifier: SplashScreenViewController.name) as? SplashScreenViewController {
             
-            let configurator = LoginModuleConfigurator()
+            let configurator = SplashScreenModuleConfigurator()
             
-            configurator.configure(viewController: loginViewController)
+            configurator.configure(viewController: splashScreenViewController)
             
-            self.window?.rootViewController = UINavigationController(rootViewController: loginViewController)
+            self.window?.rootViewController = UINavigationController(rootViewController: splashScreenViewController)
             
             self.window?.makeKeyAndVisible()
         }

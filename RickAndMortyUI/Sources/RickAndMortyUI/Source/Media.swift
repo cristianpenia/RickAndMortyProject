@@ -13,6 +13,7 @@ public struct Media {
         
         // Image
         static let rickAndMorty = "RickAndMorty"
+        static let rickAndMortyClean = "RickAndMortyClean"
         static let rickAndMortyName = "RickAndMortyName"
         
     }
@@ -20,6 +21,7 @@ public struct Media {
     public struct Image {
         
         public static let rickAndMorty = UIImage(named: Name.rickAndMorty, in: .module, with: nil)
+        public static let rickAndMortyClean = UIImage(named: Name.rickAndMortyClean, in: .module, with: nil)
         public static let rickAndMortyName = UIImage(named: Name.rickAndMortyName, in: .module, with: nil)
     }
     

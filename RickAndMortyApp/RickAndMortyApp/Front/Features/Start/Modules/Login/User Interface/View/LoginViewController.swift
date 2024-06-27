@@ -22,7 +22,7 @@ class LoginViewController: BaseViewController {
     
     @IBOutlet weak var appImageView: UIImageView! {
         didSet {
-            appImageView.image = Media.Image.rickAndMorty
+            appImageView.image = Media.Image.rickAndMortyClean
         }
     }
     

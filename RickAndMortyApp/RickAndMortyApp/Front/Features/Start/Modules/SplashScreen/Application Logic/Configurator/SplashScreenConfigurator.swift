@@ -17,10 +17,11 @@ class SplashScreenModuleConfigurator {
         }
     }
 
-    private func configure(viewController: SplashScreenViewController) {
+    func configure(viewController: SplashScreenViewController) {
 
         let router = SplashScreenRouter()
-
+        router.viewController = viewController
+        
         let presenter = SplashScreenPresenter()
         presenter.view = viewController
         presenter.router = router

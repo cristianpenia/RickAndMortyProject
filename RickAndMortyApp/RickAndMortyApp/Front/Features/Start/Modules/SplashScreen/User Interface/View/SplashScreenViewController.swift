@@ -9,14 +9,14 @@
 import UIKit
 import RickAndMortyUI
 
-class SplashScreenViewController: UIViewController {
+class SplashScreenViewController: BaseViewController {
 
     
     // MARK: Views
     
     @IBOutlet weak var rickAndMortyImage: UIImageView! {
         didSet {
-            rickAndMortyImage.image = Media.Image.rickAndMorty
+            rickAndMortyImage.image = Media.Image.rickAndMortyClean
         }
     }
     
@@ -38,6 +38,5 @@ class SplashScreenViewController: UIViewController {
 
 extension SplashScreenViewController: SplashScreenViewInput {
     
-    func setupInitialState() {
-    }
+    func setupInitialState() {}
 }

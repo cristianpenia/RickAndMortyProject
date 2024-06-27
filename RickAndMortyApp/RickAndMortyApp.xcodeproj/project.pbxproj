@@ -76,7 +76,6 @@
 		A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */; };
 		A60D69F82BD2F0C00073C826 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60D69F62BD2F0C00073C826 /* Start.storyboard */; };
 		A60D69FA2BD2F0C00073C826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A60D69F92BD2F0C00073C826 /* Assets.xcassets */; };
-		A60D69FD2BD2F0C00073C826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60D69FB2BD2F0C00073C826 /* LaunchScreen.storyboard */; };
 		A60D6A082BD2F0C10073C826 /* RickAndMortyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A072BD2F0C10073C826 /* RickAndMortyAppTests.swift */; };
 		A60D6A122BD2F0C10073C826 /* RickAndMortyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A112BD2F0C10073C826 /* RickAndMortyAppUITests.swift */; };
 		A60D6A142BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D6A132BD2F0C10073C826 /* RickAndMortyAppUITestsLaunchTests.swift */; };
@@ -222,7 +221,6 @@
 		A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A60D69F72BD2F0C00073C826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Start.storyboard; sourceTree = "<group>"; };
 		A60D69F92BD2F0C00073C826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A60D69FC2BD2F0C00073C826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A60D69FE2BD2F0C00073C826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A60D6A032BD2F0C10073C826 /* RickAndMortyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RickAndMortyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D6A072BD2F0C10073C826 /* RickAndMortyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RickAndMortyAppTests.swift; sourceTree = "<group>"; };
@@ -457,8 +455,8 @@
 		3E18AAB2C83B95D27DF38710 /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				B55944764DB970A2AF81F572 /* SplashScreen */,
-				F0B4BEA256A7223CC0187005 /* Login */,
+				A6E1F4EE2C2CF0790090AADE /* Common */,
+				A65B08DC2C2CFF8800DF91CF /* Modules */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -779,10 +777,10 @@
 		A60D69EF2BD2F0C00073C826 /* RickAndMortyApp */ = {
 			isa = PBXGroup;
 			children = (
-				A60D69F02BD2F0C00073C826 /* AppDelegate.swift */,
-				A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */,
-				A60D69FE2BD2F0C00073C826 /* Info.plist */,
-				A60D6A242BD2F2520073C826 /* RickAndMorty */,
+				A6E1F4F12C2CF0D60090AADE /* Application */,
+				A6E1F4F22C2CF0E30090AADE /* SupportFiles */,
+				A66E70962BD2F4370073E88B /* Front */,
+				EB8FB4A62BD3056400F3037F /* Common */,
 				A66E70952BD2F3680073E88B /* Resource */,
 			);
 			path = RickAndMortyApp;
@@ -806,15 +804,6 @@
 			path = RickAndMortyAppUITests;
 			sourceTree = "<group>";
 		};
-		A60D6A242BD2F2520073C826 /* RickAndMorty */ = {
-			isa = PBXGroup;
-			children = (
-				EB8FB4A62BD3056400F3037F /* Common */,
-				A66E70962BD2F4370073E88B /* Front */,
-			);
-			path = RickAndMorty;
-			sourceTree = "<group>";
-		};
 		A62FF1092BD9631800259FCD /* ServiceCoordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -832,6 +821,40 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		A65B08DC2C2CFF8800DF91CF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B55944764DB970A2AF81F572 /* SplashScreen */,
+				F0B4BEA256A7223CC0187005 /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A65B08DD2C2CFFB800DF91CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A65B08DE2C2CFFBE00DF91CF /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				420E2CC39B10DB017BE4560C /* MenuTabBar */,
+				5E77D0664963A2BC7CF4CD5A /* Home */,
+				284435AE14F0E20E18CEED3B /* Store */,
+				CBDE514A80E1BE87F39FCCFB /* Profile */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A65B08DF2C2D007300DF91CF /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 		A66E70952BD2F3680073E88B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -844,7 +867,7 @@
 			isa = PBXGroup;
 			children = (
 				A66E709C2BD2FAE70073E88B /* Storyboards */,
-				EEFBF0E476871B632CD4409C /* Modules */,
+				EEFBF0E476871B632CD4409C /* Features */,
 			);
 			path = Front;
 			sourceTree = "<group>";
@@ -859,18 +882,81 @@
 		A66E709C2BD2FAE70073E88B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				A60D69FB2BD2F0C00073C826 /* LaunchScreen.storyboard */,
 				A60D69F62BD2F0C00073C826 /* Start.storyboard */,
 				A630B1C02BD81DD900F5777C /* Home.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		A66E709E2BD737610073E88B /* Entity */ = {
+		A6E1F4EA2C2CEF4E0090AADE /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				47B038ED574D6C03F907B3FB /* Interactor */,
+				4F92DE7450A2635A135501CD /* Configurator */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		A6E1F4EB2C2CEF6A0090AADE /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				552A54F7403E32CB6B614B32 /* View */,
+				286CCE40E33129817F3C4D43 /* Presenter */,
+				1CC5FDC591786C9514DB017F /* Router */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		A6E1F4EC2C2CF0200090AADE /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				EF38A6FE658A3CEC77D0B7AA /* View */,
+				F36082F49ADDE9FB60FA3F1C /* Presenter */,
+				D235ACDB79E194FD4B6BA24C /* Router */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		A6E1F4ED2C2CF0280090AADE /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				393399DBC84133BE3BD2F6D0 /* Interactor */,
+				AAE2B4BA35EE84B5C0C1BB86 /* Configurator */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		A6E1F4EE2C2CF0790090AADE /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A65B08DF2C2D007300DF91CF /* Entity */,
+				A6E1F4EF2C2CF0A40090AADE /* String */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A6E1F4EF2C2CF0A40090AADE /* String */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Entity;
+			path = String;
+			sourceTree = "<group>";
+		};
+		A6E1F4F12C2CF0D60090AADE /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A60D69F02BD2F0C00073C826 /* AppDelegate.swift */,
+				A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A6E1F4F22C2CF0E30090AADE /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				A60D69FE2BD2F0C00073C826 /* Info.plist */,
+			);
+			path = SupportFiles;
 			sourceTree = "<group>";
 		};
 		AAE2B4BA35EE84B5C0C1BB86 /* Configurator */ = {
@@ -885,11 +971,8 @@
 		B55944764DB970A2AF81F572 /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
-				552A54F7403E32CB6B614B32 /* View */,
-				286CCE40E33129817F3C4D43 /* Presenter */,
-				47B038ED574D6C03F907B3FB /* Interactor */,
-				1CC5FDC591786C9514DB017F /* Router */,
-				4F92DE7450A2635A135501CD /* Configurator */,
+				A6E1F4EA2C2CEF4E0090AADE /* Application Logic */,
+				A6E1F4EB2C2CEF6A0090AADE /* User Interface */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -1047,13 +1130,13 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		EEFBF0E476871B632CD4409C /* Modules */ = {
+		EEFBF0E476871B632CD4409C /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				3E18AAB2C83B95D27DF38710 /* Start */,
 				EF5F61F1ED629955986B9085 /* Home */,
 			);
-			path = Modules;
+			path = Features;
 			sourceTree = "<group>";
 		};
 		EF38A6FE658A3CEC77D0B7AA /* View */ = {
@@ -1069,10 +1152,8 @@
 		EF5F61F1ED629955986B9085 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5E77D0664963A2BC7CF4CD5A /* Home */,
-				420E2CC39B10DB017BE4560C /* MenuTabBar */,
-				284435AE14F0E20E18CEED3B /* Store */,
-				CBDE514A80E1BE87F39FCCFB /* Profile */,
+				A65B08DD2C2CFFB800DF91CF /* Common */,
+				A65B08DE2C2CFFBE00DF91CF /* Modules */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1080,12 +1161,8 @@
 		F0B4BEA256A7223CC0187005 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				A66E709E2BD737610073E88B /* Entity */,
-				EF38A6FE658A3CEC77D0B7AA /* View */,
-				F36082F49ADDE9FB60FA3F1C /* Presenter */,
-				393399DBC84133BE3BD2F6D0 /* Interactor */,
-				D235ACDB79E194FD4B6BA24C /* Router */,
-				AAE2B4BA35EE84B5C0C1BB86 /* Configurator */,
+				A6E1F4ED2C2CF0280090AADE /* Application Logic */,
+				A6E1F4EC2C2CF0200090AADE /* User Interface */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1277,7 +1354,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A60D69FD2BD2F0C00073C826 /* LaunchScreen.storyboard in Resources */,
 				A60D69FA2BD2F0C00073C826 /* Assets.xcassets in Resources */,
 				A60D69F82BD2F0C00073C826 /* Start.storyboard in Resources */,
 				A630B1C12BD81DD900F5777C /* Home.storyboard in Resources */,
@@ -1460,14 +1536,6 @@
 			name = Start.storyboard;
 			sourceTree = "<group>";
 		};
-		A60D69FB2BD2F0C00073C826 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A60D69FC2BD2F0C00073C826 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -1523,7 +1591,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UILaunchStoryboardName = Start.storyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1580,7 +1649,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UILaunchStoryboardName = Start.storyboard;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1599,12 +1669,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZJJ275SY3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickAndMortyApp/Info.plist;
+				INFOPLIST_FILE = RickAndMortyApp/SupportFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "R & M";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = Start.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Start;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1630,12 +1701,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = ZJJ275SY3R;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RickAndMortyApp/Info.plist;
+				INFOPLIST_FILE = RickAndMortyApp/SupportFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "R & M";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UILaunchStoryboardName = Start.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Start;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
