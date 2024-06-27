@@ -15,12 +15,14 @@ public struct Color {
         static let viewControllerBackground = "RMBackground"
         static let green = "RMGreen"
         static let meeseeks = "RMMeeseeks"
+        static let gray = "RMGray"
     }
     
     public static let backgroundLine: UIColor = UIColor.newColor(with: Name.backgroundLine)
     public static let viewControllerBackground: UIColor = UIColor.newColor(with: Name.viewControllerBackground)
     public static let green: UIColor = UIColor.newColor(with: Name.green)
     public static let meeseeks: UIColor = UIColor.newColor(with: Name.meeseeks)
+    public static let gray: UIColor = UIColor.newColor(with: Name.gray)
 }
 
 

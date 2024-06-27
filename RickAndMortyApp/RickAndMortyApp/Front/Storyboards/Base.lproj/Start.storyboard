@@ -87,11 +87,10 @@
                                     <constraint firstItem="fd3-Ce-Ogm" firstAttribute="top" secondItem="dmJ-f7-bYk" secondAttribute="top" id="wcd-g3-TBa"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56I-LQ-XR8">
-                                <rect key="frame" x="20" y="758" width="353" height="42"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56I-LQ-XR8" customClass="SecondaryUIButton" customModule="RickAndMortyUI">
+                                <rect key="frame" x="40" y="740" width="313" height="60"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="8C5-4A-sKt"/>
+                                    <constraint firstAttribute="height" constant="60" id="8C5-4A-sKt"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -116,8 +115,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dmJ-f7-bYk" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="20" id="8ey-LH-Dq0"/>
-                            <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="56I-LQ-XR8" secondAttribute="trailing" constant="20" id="Car-ZL-DxJ"/>
-                            <constraint firstItem="56I-LQ-XR8" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="20" id="EBc-vt-p6y"/>
+                            <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="56I-LQ-XR8" secondAttribute="trailing" constant="40" id="Car-ZL-DxJ"/>
+                            <constraint firstItem="56I-LQ-XR8" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="40" id="EBc-vt-p6y"/>
                             <constraint firstItem="GXI-6N-EZd" firstAttribute="top" secondItem="taS-8O-Vro" secondAttribute="top" constant="4" id="cue-AA-vbh"/>
                             <constraint firstItem="taS-8O-Vro" firstAttribute="bottom" secondItem="56I-LQ-XR8" secondAttribute="bottom" constant="18" id="isc-TF-aZV"/>
                             <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="dmJ-f7-bYk" secondAttribute="trailing" constant="20" id="nDq-97-AIU"/>
@@ -148,9 +147,6 @@
         <image name="info.circle" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
