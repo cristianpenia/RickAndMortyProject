@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -54,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmJ-f7-bYk">
-                                <rect key="frame" x="20" y="226" width="353" height="300"/>
+                                <rect key="frame" x="20" y="211" width="353" height="330"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-Ce-Ogm">
                                         <rect key="frame" x="96.666666666666686" y="0.0" width="160" height="160"/>
@@ -64,12 +65,20 @@
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2QD-Kn-rd8">
-                                        <rect key="frame" x="0.0" y="204" width="353" height="34"/>
+                                        <rect key="frame" x="0.0" y="214" width="353" height="44"/>
+                                        <color key="backgroundColor" name="RMGray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Eev-21-9fu"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdE-f3-Wto">
-                                        <rect key="frame" x="0.0" y="266" width="353" height="34"/>
+                                        <rect key="frame" x="0.0" y="286" width="353" height="44"/>
+                                        <color key="backgroundColor" name="RMGray"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="qC1-pj-N76"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -79,7 +88,7 @@
                                     <constraint firstAttribute="bottom" secondItem="bdE-f3-Wto" secondAttribute="bottom" id="2KO-AO-4Jo"/>
                                     <constraint firstItem="2QD-Kn-rd8" firstAttribute="leading" secondItem="dmJ-f7-bYk" secondAttribute="leading" id="7hp-Sl-a1T"/>
                                     <constraint firstAttribute="trailing" secondItem="2QD-Kn-rd8" secondAttribute="trailing" id="ASy-vC-UY4"/>
-                                    <constraint firstItem="2QD-Kn-rd8" firstAttribute="top" secondItem="fd3-Ce-Ogm" secondAttribute="bottom" constant="44" id="FQk-1d-pxu"/>
+                                    <constraint firstItem="2QD-Kn-rd8" firstAttribute="top" secondItem="fd3-Ce-Ogm" secondAttribute="bottom" constant="54" id="FQk-1d-pxu"/>
                                     <constraint firstAttribute="trailing" secondItem="bdE-f3-Wto" secondAttribute="trailing" id="XRc-4N-pGx"/>
                                     <constraint firstItem="bdE-f3-Wto" firstAttribute="top" secondItem="2QD-Kn-rd8" secondAttribute="bottom" constant="28" id="bWH-hw-x6l"/>
                                     <constraint firstItem="fd3-Ce-Ogm" firstAttribute="centerX" secondItem="dmJ-f7-bYk" secondAttribute="centerX" id="jXr-Wq-NpR"/>
@@ -87,10 +96,10 @@
                                     <constraint firstItem="fd3-Ce-Ogm" firstAttribute="top" secondItem="dmJ-f7-bYk" secondAttribute="top" id="wcd-g3-TBa"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56I-LQ-XR8" customClass="SecondaryUIButton" customModule="RickAndMortyUI">
-                                <rect key="frame" x="40" y="740" width="313" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="56I-LQ-XR8" customClass="PrimaryUIButton" customModule="RickAndMortyUI">
+                                <rect key="frame" x="50" y="752" width="293" height="48"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="8C5-4A-sKt"/>
+                                    <constraint firstAttribute="height" constant="48" id="8C5-4A-sKt"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -115,8 +124,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="dmJ-f7-bYk" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="20" id="8ey-LH-Dq0"/>
-                            <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="56I-LQ-XR8" secondAttribute="trailing" constant="40" id="Car-ZL-DxJ"/>
-                            <constraint firstItem="56I-LQ-XR8" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="40" id="EBc-vt-p6y"/>
+                            <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="56I-LQ-XR8" secondAttribute="trailing" constant="50" id="Car-ZL-DxJ"/>
+                            <constraint firstItem="56I-LQ-XR8" firstAttribute="leading" secondItem="taS-8O-Vro" secondAttribute="leading" constant="50" id="EBc-vt-p6y"/>
                             <constraint firstItem="GXI-6N-EZd" firstAttribute="top" secondItem="taS-8O-Vro" secondAttribute="top" constant="4" id="cue-AA-vbh"/>
                             <constraint firstItem="taS-8O-Vro" firstAttribute="bottom" secondItem="56I-LQ-XR8" secondAttribute="bottom" constant="18" id="isc-TF-aZV"/>
                             <constraint firstItem="taS-8O-Vro" firstAttribute="trailing" secondItem="dmJ-f7-bYk" secondAttribute="trailing" constant="20" id="nDq-97-AIU"/>
@@ -145,6 +154,9 @@
     </scenes>
     <resources>
         <image name="info.circle" catalog="system" width="128" height="123"/>
+        <namedColor name="RMGray">
+            <color red="0.95294117647058818" green="0.95294117647058818" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

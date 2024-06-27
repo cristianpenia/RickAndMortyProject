@@ -12,27 +12,20 @@ import SnapKit
 class BaseViewController: UIViewController {
     
     
-    // MARK: Properties
-    
-    
     // MARK: Views
     
-    var viewBackground: UIView! {
-        didSet {
-            viewBackground.backgroundColor = Color.viewControllerBackground
-            viewBackground.layer.cornerRadius = 48
-        }
-    }
+    
+    // MARK: Properties
     
     var loadingViewController: LoadingViewController!
     
     
-    // Lifecycle
+    // MARK: Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = Color.backgroundLine
+        view.backgroundColor = Color.viewControllerBackground
         
         addViews()
     }
@@ -41,26 +34,14 @@ class BaseViewController: UIViewController {
     // MARK: Private Methods
     
     private func addViews() {
-        addViewCotrollerBackground()
-    }
-    
-    private func addViewCotrollerBackground() {
-        
-        viewBackground = UIView()
-        
-        view.addSubview(viewBackground)
-        view.sendSubviewToBack(viewBackground)
-        
-        viewBackground.snp.makeConstraints { make in
-            make.edges.equalToSuperview().inset(6)
-        }
+//        addLoading()
     }
     
     private func addLoading() {
         loadingViewController = LoadingViewController()
         
-        viewBackground.addSubview(loadingViewController.view)
-        viewBackground.bringSubviewToFront(loadingViewController.view)
+        view.addSubview(loadingViewController.view)
+        view.bringSubviewToFront(loadingViewController.view)
 
         loadingViewController.view.snp.makeConstraints { make in
             make.edges.equalToSuperview()
