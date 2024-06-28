@@ -9,5 +9,6 @@
 import Foundation
 
 protocol HomeInteractorOutput: AnyObject {
-
+    func didGetCharacters(_ characters: CharactersResponse)
+    func didFailGettingCharacters()
 }

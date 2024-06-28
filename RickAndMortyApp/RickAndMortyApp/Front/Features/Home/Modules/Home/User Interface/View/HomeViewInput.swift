@@ -7,11 +7,7 @@
 //
 
 protocol HomeViewInput: AnyObject {
-
-    /**
-        @author Cristian Peña
-        Setup initial state of the view
-    */
-
-    func setupInitialState()
+    func setupInitialState(with characters: [ResultResponse])
+    func showLoading()
+    func hideLoading()
 }

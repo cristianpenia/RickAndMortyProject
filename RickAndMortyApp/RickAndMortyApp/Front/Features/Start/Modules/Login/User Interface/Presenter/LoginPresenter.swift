@@ -36,7 +36,7 @@ extension LoginPresenter: LoginInteractorOutput {
     func didLogin() {
         
         // TODO: The connection will be worked on in a next PR
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
             
             self.view.hideLoading()
             self.router.routeToHome()

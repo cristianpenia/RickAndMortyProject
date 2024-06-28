@@ -56,14 +56,17 @@ class BaseViewController: UIViewController {
     }
     
     public func hideViewLoading() {
-        if let loadingView = self.loadingViewController.view.viewWithTag(100) {
+        if let loadingViewController {
             UIView.animate(withDuration: 0.3, animations: {
-                loadingView.alpha = 0
+                loadingViewController.view.alpha = 0
             }) { completed in
                 if completed {
-                    loadingView.removeFromSuperview()
+                    loadingViewController.view.removeFromSuperview()
                 }
             }
+        } else {
+            // TODO: validar el comportamiento del loading
+            print("no hay vista")
         }
     }
 }

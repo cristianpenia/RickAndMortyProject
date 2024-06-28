@@ -94,25 +94,8 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ced-VD-eAv">
-                                <rect key="frame" x="20" y="415.66666666666669" width="353" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="ahc-hJ-l3h"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="ced-VD-eAv" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="6pb-a7-xfd"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ced-VD-eAv" secondAttribute="trailing" constant="20" id="UGo-rf-qKI"/>
-                            <constraint firstItem="ced-VD-eAv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qQQ-tY-ccg"/>
-                            <constraint firstItem="ced-VD-eAv" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vHZ-NA-pKQ"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" selectedImage="house" catalog="system" id="nU7-9F-72J"/>
                     <navigationItem key="navigationItem" id="dC4-kI-2HR"/>
