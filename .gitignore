@@ -8,12 +8,11 @@
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
-xcuserdata
+xcuserdata/
 *.xccheckout
 *.moved-aside
-DerivedData
+DerivedData/
 *.xcuserstate
-xcuserdata/**/UserInterfaceState.xcuserstate
 xcuserdata/**/xcschemes/xcschememanagement.plist
 
 # Swift Package Manager
@@ -28,8 +27,8 @@ Carthage/Build/
 # Fastlane
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots
-fastlane/test_output
+fastlane/screenshots/
+fastlane/test_output/
 
 # Accio dependency manager
 Dependencies/
