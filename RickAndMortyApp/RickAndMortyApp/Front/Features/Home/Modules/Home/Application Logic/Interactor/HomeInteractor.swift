@@ -87,7 +87,7 @@ extension HomeInteractor: HomeInteractorInput {
                 self.output.didGetCharacters(success)
                 
                 // TODO: Validar todos los posibles errores
-            case .failure(let failure):
+            case .failure( _):
                 self.output.didFailGettingCharacters()
             }
         }

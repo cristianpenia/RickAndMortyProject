@@ -6,12 +6,7 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol ProfileViewInput: class {
-
-    /**
-        @author Cristian Peña
-        Setup initial state of the view
-    */
-
+protocol ProfileViewInput: AnyObject {
+    
     func setupInitialState()
 }

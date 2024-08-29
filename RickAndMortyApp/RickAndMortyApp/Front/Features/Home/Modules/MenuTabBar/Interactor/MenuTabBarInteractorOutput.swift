@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol MenuTabBarInteractorOutput: class {
-
-}
+protocol MenuTabBarInteractorOutput: AnyObject {}

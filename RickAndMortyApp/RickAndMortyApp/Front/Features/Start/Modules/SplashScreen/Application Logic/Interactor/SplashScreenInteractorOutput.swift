@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol SplashScreenInteractorOutput: class {
+protocol SplashScreenInteractorOutput: AnyObject {
 
 }

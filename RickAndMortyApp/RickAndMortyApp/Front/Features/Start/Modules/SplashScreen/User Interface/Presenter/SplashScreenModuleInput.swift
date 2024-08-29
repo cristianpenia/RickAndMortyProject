@@ -6,6 +6,6 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol SplashScreenModuleInput: class {
+protocol SplashScreenModuleInput: AnyObject {
 
 }

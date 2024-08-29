@@ -7,11 +7,6 @@
 //
 
 protocol StoreViewInput: AnyObject {
-
-    /**
-        @author Cristian Peña
-        Setup initial state of the view
-    */
-
+    
     func setupInitialState()
 }

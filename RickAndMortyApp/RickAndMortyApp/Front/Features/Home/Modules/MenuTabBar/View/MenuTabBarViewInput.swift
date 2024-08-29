@@ -6,12 +6,7 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol MenuTabBarViewInput: class {
-
-    /**
-        @author Cristian Peña
-        Setup initial state of the view
-    */
-
+protocol MenuTabBarViewInput: AnyObject {
+    
     func setupInitialState()
 }

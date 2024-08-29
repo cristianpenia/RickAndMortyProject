@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol StoreInteractorOutput: class {
-
-}
+protocol StoreInteractorOutput: AnyObject {}

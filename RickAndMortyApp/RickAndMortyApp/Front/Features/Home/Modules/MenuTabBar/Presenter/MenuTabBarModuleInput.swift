@@ -6,6 +6,4 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-protocol MenuTabBarModuleInput: class {
-
-}
+protocol MenuTabBarModuleInput: AnyObject {}
