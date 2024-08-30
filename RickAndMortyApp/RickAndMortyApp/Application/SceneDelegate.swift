@@ -18,18 +18,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(windowScene: windowScene)
         
-        let storyboard = UIStoryboard(name: Storyboards.Start.rawValue, bundle: nil)
         
-//        if let loginViewController = storyboard.instantiateViewController(withIdentifier: LoginViewController.name) as? LoginViewController {
-//            
-//            let configurator = LoginModuleConfigurator()
-//            
-//            configurator.configure(viewController: loginViewController)
-//            
-//            self.window?.rootViewController = UINavigationController(rootViewController: loginViewController)
-//            
-//            self.window?.makeKeyAndVisible()
-//        }
+        // TODO: generar un main coordinator
+        
+        let storyboard = UIStoryboard(name: Storyboards.Start.rawValue, bundle: nil)
         
         if let splashScreenViewController = storyboard.instantiateViewController(withIdentifier: SplashScreenViewController.name) as? SplashScreenViewController {
             

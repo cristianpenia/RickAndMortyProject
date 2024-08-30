@@ -56,18 +56,41 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         
         setupUI()
+        setupTest()
         
         output.viewIsReady()
     }
     
     
     // MARK: Private methods
+    
     private func setupUI() {
         navigationController?.isNavigationBarHidden = true
         
         appImageView.layer.cornerRadius = appImageView.frame.height / 3
         appImageView.clipsToBounds = true
+        
     }
+    
+    private func setupTest() {
+        
+
+        
+        let userTextField = TextField()
+        userTextField.placeholder = "Correo electrónico"
+        userTextField.validationPattern = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$"
+        userTextField.errorMessage = "Por favor, ingresa un correo electrónico válido."
+        userTextField.keyboardType = .emailAddress
+        userTextField.autocapitalizationType = .none
+        view.addSubview(userTextField)
+        
+        userTextField.snp.makeConstraints { make in
+            make.height.equalTo(80)
+            make.top.equalToSuperview().inset(120)
+            make.horizontalEdges.equalToSuperview().inset(20)
+        }
+    }
+    
     
     // MARK: Actions
     

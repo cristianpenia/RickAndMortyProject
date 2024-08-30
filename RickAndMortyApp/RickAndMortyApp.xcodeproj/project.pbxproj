@@ -479,7 +479,7 @@
 		3E18AAB2C83B95D27DF38710 /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				A6E1F4EE2C2CF0790090AADE /* Common */,
+				A6668C272C8131E40048CD04 /* Common */,
 				A65B08DC2C2CFF8800DF91CF /* Modules */,
 			);
 			path = Start;
@@ -929,11 +929,11 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		A65B08DF2C2D007300DF91CF /* Entity */ = {
+		A6668C272C8131E40048CD04 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Entity;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A66E70952BD2F3680073E88B /* Resource */ = {
@@ -1041,22 +1041,6 @@
 				AAE2B4BA35EE84B5C0C1BB86 /* Configurator */,
 			);
 			path = "Application Logic";
-			sourceTree = "<group>";
-		};
-		A6E1F4EE2C2CF0790090AADE /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				A65B08DF2C2D007300DF91CF /* Entity */,
-				A6E1F4EF2C2CF0A40090AADE /* String */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		A6E1F4EF2C2CF0A40090AADE /* String */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = String;
 			sourceTree = "<group>";
 		};
 		A6E1F4F12C2CF0D60090AADE /* Application */ = {

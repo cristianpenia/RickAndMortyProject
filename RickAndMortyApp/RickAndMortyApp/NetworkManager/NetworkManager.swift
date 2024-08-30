@@ -49,13 +49,4 @@ class NetworkManager {
         }
     }
     
-    
-    // TODO: remover esto
-//    static func fetchCharacters(completion: @escaping (Result<CharactersResponse, Error>) -> Void) {
-//        let charactersURL = "https://api.example.com/characters" // Reemplaza con tu URL
-//
-//        AF.request(charactersURL).response { response in
-//            handleResponse(response, of: CharactersResponse.self, completion: completion)
-//        }
-//    }
 }
