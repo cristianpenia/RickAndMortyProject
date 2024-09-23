@@ -8,6 +8,10 @@
 import UIKit
 import SnapKit
 
+
+// TODO: reactividad
+// TODO: validacion default
+
 public class TextField: UIView {
     
     
@@ -17,6 +21,7 @@ public class TextField: UIView {
         didSet {
             titleLabel.translatesAutoresizingMaskIntoConstraints = false
             titleLabel.font = UIFont.systemFont(ofSize: 12)
+            titleLabel.textColor = .darkGray
             titleLabel.alpha = 0
         }
     }
@@ -42,15 +47,27 @@ public class TextField: UIView {
     
     // MARK: Properties
     
-    public var placeholder = "" {
+    // TODO: generar documentacion documentacion
+    private var configuration: TextFieldConfiguration {
+        didSet {
+            placeholder = configuration.placeholder ?? ""
+            validationPattern = configuration.validationPattern
+            errorMessage = configuration.errorMessage
+            keyboardType = configuration.keyboardType
+            autocapitalizationType = configuration.autocapitalizationType
+        }
+    }
+    
+    private var placeholder = "" {
         didSet {
             textField.placeholder = placeholder
             titleLabel.text = placeholder
         }
     }
     
-    public var validationPattern: String?
-    public var errorMessage: String?
+    private var validationPattern: String?
+    private var errorMessage: String?
+    public  var text: String?
     
     /// Description
     /// Tipos de teclado disponibles:
@@ -64,13 +81,13 @@ public class TextField: UIView {
     /// - decimalPad: Teclado numérico con soporte para punto decimal.
     /// - twitter: Teclado optimizado para la entrada de Twitter (con símbolos comunes como “@” y “#”).
     /// - webSearch: Teclado optimizado para la búsqueda web.
-    public var keyboardType: UIKeyboardType = .default {
+    private var keyboardType: UIKeyboardType = .default {
         didSet {
             textField.keyboardType = keyboardType
         }
     }
     
-    public var autocapitalizationType: UITextAutocapitalizationType = .none {
+    private var autocapitalizationType: UITextAutocapitalizationType = .none {
         didSet {
             textField.autocapitalizationType = autocapitalizationType
         }
@@ -80,6 +97,17 @@ public class TextField: UIView {
     // MARK: Lifecycle
     
     override init(frame: CGRect) {
+        configuration = TextFieldConfiguration()
+        
+        super.init(frame: frame)
+        
+        setup()
+        setupTextField()
+    }
+    
+    public init(frame: CGRect, configuration: TextFieldConfiguration) {
+        self.configuration = configuration
+        
         super.init(frame: frame)
         
         setup()
@@ -99,6 +127,7 @@ public class TextField: UIView {
         }
         
         titleLabel = UILabel()
+        
         addSubview(titleLabel)
         
         titleLabel.snp.makeConstraints { make in
@@ -113,6 +142,7 @@ public class TextField: UIView {
                                                  right: 8)
         
         textField = PaddedTextField(padding: padding)
+        
         addSubview(textField)
         
         textField.snp.makeConstraints { make in
@@ -122,6 +152,7 @@ public class TextField: UIView {
         }
         
         messageLabel = UILabel()
+        
         addSubview(messageLabel)
         
         messageLabel.snp.makeConstraints { make in
@@ -142,19 +173,21 @@ public class TextField: UIView {
     // MARK: Validation
     
     public func validate() -> Bool {
-        guard let pattern = validationPattern, let text = textField.text else {
-            return true
-        }
-        
-        let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive])
-        let range = NSRange(location: 0, length: text.utf16.count)
-        
-        if let _ = regex?.firstMatch(in: text, options: [], range: range) {
-            hideError()
-            return true
+        if let pattern = validationPattern, let text = textField.text  {
+            
+            let regex = try? NSRegularExpression(pattern: pattern, options: [.caseInsensitive])
+            let range = NSRange(location: 0, length: text.utf16.count)
+            
+            if let _ = regex?.firstMatch(in: text, options: [], range: range) {
+                hideError()
+                self.text = text
+                return true
+            } else {
+                showError(message: errorMessage ?? "Error de validación")
+                return false
+            }
         } else {
-            showError(message: errorMessage ?? "Error de validación")
-            return false
+            return true
         }
     }
     
@@ -166,38 +199,5 @@ public class TextField: UIView {
     private func hideError() {
         messageLabel.isHidden = true
         messageLabel.text = nil
-    }
-}
-
-import UIKit
-
-extension TextField: UITextFieldDelegate {
-    
-    internal func setupTextField() {
-        textField.addTarget(self, action: #selector(textFieldEditingDidBegin), for: .editingDidBegin)
-        textField.addTarget(self, action: #selector(textFieldEditingDidEnd), for: .editingDidEnd)
-        textField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
-    }
-    
-    @objc private func textFieldEditingDidBegin() {
-        if let text = textField.text, !text.isEmpty {
-            animateTitleLabel(visible: true)
-        }
-    }
-    
-    @objc private func textFieldEditingDidEnd() {
-        if let text = textField.text, text.isEmpty {
-            animateTitleLabel(visible: false)
-        } else {
-            _ = validate()
-        }
-    }
-    
-    @objc private func textFieldDidChange() {
-        if let text = textField.text, !text.isEmpty {
-            animateTitleLabel(visible: true)
-        } else {
-            animateTitleLabel(visible: false)
-        }
     }
 }
