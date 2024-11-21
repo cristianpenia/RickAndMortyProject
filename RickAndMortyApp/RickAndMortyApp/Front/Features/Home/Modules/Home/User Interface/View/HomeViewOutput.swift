@@ -9,4 +9,5 @@
 protocol HomeViewOutput {
     
     func viewIsReady()
+    func didTapCharacterCell(character: CharacterResultResponse)
 }

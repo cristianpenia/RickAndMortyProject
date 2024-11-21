@@ -6,6 +6,9 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-class MenuTabBarRouter: MenuTabBarRouterInput {
-
+class MenuTabBarRouter {
+    
+    weak var viewController: MenuTabBarViewController!
 }
+
+extension MenuTabBarRouter: MenuTabBarRouterInput {}

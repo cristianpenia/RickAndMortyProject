@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - ResultResponse
 
-struct ResultResponse: Codable {
+struct CharacterResultResponse: Codable {
     let id: Int
     let name, status, species, type: String
     let gender: String

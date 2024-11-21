@@ -9,5 +9,6 @@
 import Foundation
 
 protocol HomeRouterInput {
-
+    
+    func routeToCharacterDetailsView(character: CharacterResultResponse)
 }

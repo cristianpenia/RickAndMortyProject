@@ -44,6 +44,14 @@ protocol Routable {
     func makeViewController<T: UIViewController>(identifier: String,
                                                  type: T.Type,
                                                  in storyboard: UIStoryboard.Storyboard) -> T
+    
+    func presentPanModalController<T: UIViewController>(withIdentifer identifier: String,
+                                                        type: T.Type,
+                                                        in storyBoard: UIStoryboard.Storyboard,
+                                                        from viewController: UIViewController,
+                                                        moduleConfiguration: (T) -> Void)
+    
+    
 }
 
 extension Routable {
@@ -103,6 +111,7 @@ extension Routable {
         let bundle = Bundle(for: type)
         let storyboard = UIStoryboard.storyboard(storyboard, bundle: bundle)
         let nextViewController  = storyboard.instantiateViewController(withIdentifier: identifier) as! T
+        
         let navigationController = UINavigationController(rootViewController: nextViewController)
         
         if #available(iOS 13.0, *) {
@@ -143,5 +152,31 @@ extension Routable {
         let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as! T
         
         return viewController
+    }
+    
+    func presentPanModalController<T: UIViewController>(withIdentifer identifier: String,
+                                                        type: T.Type,
+                                                        in storyBoard: UIStoryboard.Storyboard,
+                                                        from viewController: UIViewController,
+                                                        moduleConfiguration: (T) -> Void) {
+        let bundle = Bundle(for: type)
+        let storyBoard = UIStoryboard.storyboard(storyBoard, bundle: bundle)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: identifier) as! T
+        moduleConfiguration(nextViewController)
+        viewController.presentPanModal(nextViewController)
+    }
+}
+
+
+extension UIViewController {
+    
+    func presentPanModal(_ nextViewController: UIViewController) {
+        
+        nextViewController.modalPresentationStyle = .automatic
+        nextViewController.modalPresentationCapturesStatusBarAppearance = true
+        // controla si se puede cerrar o no por mediod de un gesto
+        nextViewController.isModalInPresentation = false
+        
+        present(nextViewController, animated: true, completion: nil)
     }
 }

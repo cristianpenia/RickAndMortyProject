@@ -6,9 +6,15 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-class SplashScreenRouter: SplashScreenRouterInput, Routable {
+class SplashScreenRouter: Routable {
     
     weak var viewController: SplashScreenViewController!
+}
+
+
+// MARK: SplashScreenRouterInput
+
+extension SplashScreenRouter: SplashScreenRouterInput {
     
     func routeToLogin() {
         

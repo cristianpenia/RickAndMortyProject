@@ -17,5 +17,4 @@ class LoginModuleInitializer: NSObject {
         let configurator = LoginModuleConfigurator()
         configurator.configureModuleForViewInput(viewInput: loginViewController)
     }
-
 }

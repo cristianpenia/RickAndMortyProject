@@ -9,5 +9,7 @@
 import Foundation
 
 protocol LoginInteractorInput {
+    
+    // TODO: rename this method
     func login()
 }

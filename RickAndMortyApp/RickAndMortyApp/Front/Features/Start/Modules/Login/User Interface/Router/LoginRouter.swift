@@ -8,9 +8,13 @@
 
 import UIKit
 
-class LoginRouter: LoginRouterInput, Routable {
+class LoginRouter: Routable {
     
     weak var viewController: LoginViewController!
+    
+}
+
+extension LoginRouter: LoginRouterInput {
     
     func routeToHome() {
         

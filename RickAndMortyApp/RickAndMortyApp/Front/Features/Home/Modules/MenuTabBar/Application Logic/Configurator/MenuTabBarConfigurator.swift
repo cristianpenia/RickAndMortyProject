@@ -20,14 +20,16 @@ class MenuTabBarModuleConfigurator {
     private func configure(viewController: MenuTabBarViewController) {
 
         let router = MenuTabBarRouter()
-
+        router.viewController = viewController
+        
         let presenter = MenuTabBarPresenter()
+        
         presenter.view = viewController
         presenter.router = router
 
         let interactor = MenuTabBarInteractor()
+        
         interactor.output = presenter
-
         presenter.interactor = interactor
         viewController.output = presenter
     }

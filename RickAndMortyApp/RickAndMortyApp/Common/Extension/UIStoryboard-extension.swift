@@ -34,11 +34,11 @@ public extension UIStoryboard {
     
 }
 
-public protocol StoryboardIdentifiable {
+protocol StoryboardIdentifiable {
     static var storyboardIdentifier: String { get }
 }
 
-public extension StoryboardIdentifiable where Self: UIViewController {
+extension StoryboardIdentifiable where Self: UIViewController {
     static var storyboardIdentifier: String {
         return String(describing: Self.self)
     }

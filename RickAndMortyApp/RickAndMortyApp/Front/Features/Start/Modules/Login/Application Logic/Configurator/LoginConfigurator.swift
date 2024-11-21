@@ -31,10 +31,7 @@ class LoginModuleConfigurator {
         let interactor = LoginInteractor()
         
         interactor.output = presenter
-
         presenter.interactor = interactor
-        
         viewController.output = presenter
     }
-
 }

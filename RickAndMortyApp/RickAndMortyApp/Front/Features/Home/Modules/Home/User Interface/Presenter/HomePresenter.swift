@@ -32,6 +32,10 @@ extension HomePresenter: HomeViewOutput {
         view.showLoading()
         interactor.getCharacters()
     }
+    
+    func didTapCharacterCell(character: CharacterResultResponse) {
+        router.routeToCharacterDetailsView(character: character)
+    }
 }
 
 

@@ -6,10 +6,16 @@
 //  Copyright © 2024 RickAndMortyApp. All rights reserved.
 //
 
-class LoginInteractor: LoginInteractorInput {
+class LoginInteractor {
 
     weak var output: LoginInteractorOutput!
+}
 
+
+// MARK: LoginInteractorInput
+
+extension LoginInteractor: LoginInteractorInput {
+    
     func login() {
         
         // TODO: The connection will be worked on in a next PR

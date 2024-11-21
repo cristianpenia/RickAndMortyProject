@@ -18,9 +18,7 @@ class SplashScreenPresenter {
 
 // MARK: SplashScreenModuleInput
 
-extension SplashScreenPresenter: SplashScreenModuleInput {
-    
-}
+extension SplashScreenPresenter: SplashScreenModuleInput {}
 
 
 // MARK: SplashScreenViewOutput
@@ -37,6 +35,4 @@ extension SplashScreenPresenter: SplashScreenViewOutput {
 
 // MARK: SplashScreenInteractorOutput
 
-extension SplashScreenPresenter: SplashScreenInteractorOutput {
-    
-}
+extension SplashScreenPresenter: SplashScreenInteractorOutput {}

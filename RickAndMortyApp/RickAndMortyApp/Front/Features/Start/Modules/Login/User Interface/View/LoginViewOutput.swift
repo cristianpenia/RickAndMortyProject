@@ -9,8 +9,6 @@
 protocol LoginViewOutput {
     
     func viewIsReady()
-    
     func didTapInformationButton()
-    
     func didTapSendButton()
 }

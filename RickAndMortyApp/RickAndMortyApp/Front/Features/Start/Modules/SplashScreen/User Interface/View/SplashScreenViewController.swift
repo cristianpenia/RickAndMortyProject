@@ -20,6 +20,7 @@ class SplashScreenViewController: BaseViewController {
         }
     }
     
+    
     // MARK: Properties
     
     var output: SplashScreenViewOutput!

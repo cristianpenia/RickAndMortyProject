@@ -26,7 +26,7 @@ class HomeViewController: BaseViewController {
     
     // MARK: Properties
     
-    var characters: [ResultResponse] = [] {
+    var characters: [CharacterResultResponse] = [] {
         didSet {
             contentTableView.reloadData()
         }
@@ -45,8 +45,6 @@ class HomeViewController: BaseViewController {
         addViews()
         
         output.viewIsReady()
-        
-//        test()
     }
     
     private func addViews() {
@@ -58,24 +56,17 @@ class HomeViewController: BaseViewController {
         contentTableView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
             make.size.width.equalToSuperview()
-            make.bottom.equalToSuperview()
+            make.bottom.equalToSuperview().inset(80)
         }
+        
+        let tableFooterView = UIView()
+        
+        tableFooterView.snp.makeConstraints { make in
+            make.height.equalTo(70)
+        }
+        
+        contentTableView.tableFooterView = tableFooterView
     }
-            
-//    private func test() {
-//        
-//        view.addSubview(characterView)
-//        
-//        characterView.frame = view.bounds
-//        
-//        let url = URL(string: "https://static.wikia.nocookie.net/rick-y-morty-espanol/images/4/4f/Rick_Sánchez_Joven.jpg/revision/latest/scale-to-width/360?cb=20231130231801&path-prefix=es")
-//        
-//        let characterModel = Character(profilePictureURL: url!, username: "Rick Sanchez", description: "Viejo loco")
-//        
-//        viewModel = CharacterViewModel(character: characterModel)
-//        
-//        characterView.viewModel = viewModel
-//    }
 }
 
 
@@ -83,7 +74,7 @@ class HomeViewController: BaseViewController {
 
 extension HomeViewController: HomeViewInput {
     
-    func setupInitialState(with characters: [ResultResponse]) {
+    func setupInitialState(with characters: [CharacterResultResponse]) {
         self.characters = characters
     }
     
@@ -127,5 +118,7 @@ extension HomeViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         contentTableView.deselectRow(at: indexPath, animated: true)
+        
+        output.didTapCharacterCell(character: characters[indexPath.row])
     }
 }

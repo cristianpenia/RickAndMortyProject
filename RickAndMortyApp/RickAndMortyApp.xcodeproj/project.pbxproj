@@ -95,10 +95,23 @@
 		A67DD8712C2D315D00728246 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A67DD8702C2D315D00728246 /* Alamofire */; };
 		A67DD8752C2D324400728246 /* CharactersResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DD8742C2D324400728246 /* CharactersResponse.swift */; };
 		A67DD8772C2D32BE00728246 /* InfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DD8762C2D32BE00728246 /* InfoResponse.swift */; };
-		A67DD8792C2D32D200728246 /* ResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DD8782C2D32D200728246 /* ResultResponse.swift */; };
+		A67DD8792C2D32D200728246 /* CharacterResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DD8782C2D32D200728246 /* CharacterResultResponse.swift */; };
 		A67DD87B2C2D32E100728246 /* LocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DD87A2C2D32E100728246 /* LocationResponse.swift */; };
 		A67DD87E2C2D35B000728246 /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67DD87D2C2D35B000728246 /* CharacterTableViewCell.swift */; };
 		A67DD8812C2D361F00728246 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A67DD8802C2D361F00728246 /* Kingfisher */; };
+		A6AAD3132CE64A1500399838 /* CharacterDetailsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD2FE2CE64A1500399838 /* CharacterDetailsConfigurator.swift */; };
+		A6AAD3142CE64A1500399838 /* CharacterDetailsInitializer..swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD2FF2CE64A1500399838 /* CharacterDetailsInitializer..swift */; };
+		A6AAD3152CE64A1500399838 /* CharacterDetailsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD3022CE64A1500399838 /* CharacterDetailsInteractor.swift */; };
+		A6AAD3162CE64A1500399838 /* CharacterDetailsInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD3032CE64A1500399838 /* CharacterDetailsInteractorInput.swift */; };
+		A6AAD3172CE64A1500399838 /* CharacterDetailsInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD3042CE64A1500399838 /* CharacterDetailsInteractorOutput.swift */; };
+		A6AAD3182CE64A1500399838 /* CharacterDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD3072CE64A1500399838 /* CharacterDetailsPresenter.swift */; };
+		A6AAD3192CE64A1500399838 /* CharacterDetailsModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD3082CE64A1500399838 /* CharacterDetailsModuleInput.swift */; };
+		A6AAD31A2CE64A1500399838 /* CharacterDetailsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD30A2CE64A1500399838 /* CharacterDetailsRouter.swift */; };
+		A6AAD31B2CE64A1500399838 /* CharacterDetailsRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD30B2CE64A1500399838 /* CharacterDetailsRouterInput.swift */; };
+		A6AAD31C2CE64A1500399838 /* CharacterDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD30D2CE64A1500399838 /* CharacterDetailsViewController.swift */; };
+		A6AAD31D2CE64A1500399838 /* CharacterDetailsViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD30E2CE64A1500399838 /* CharacterDetailsViewInput.swift */; };
+		A6AAD31E2CE64A1500399838 /* CharacterDetailsViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD30F2CE64A1500399838 /* CharacterDetailsViewOutput.swift */; };
+		A6AAD3202CE64B2D00399838 /* CharacterDetailsModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6AAD31F2CE64B2D00399838 /* CharacterDetailsModuleOutput.swift */; };
 		A6CA678B2C2DF3EC00C05656 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6CA678A2C2DF3EC00C05656 /* NetworkManager.swift */; };
 		A704BEFE154491F0EA21B8C0 /* LoginInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37407F7077CF987E4AEFFCCC /* LoginInteractorInput.swift */; };
 		A75750EF4663FCE8D24A4152 /* MenuTabBarInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1025BC714596043A845E229 /* MenuTabBarInteractorInput.swift */; };
@@ -251,9 +264,22 @@
 		A63760922C2E39F6005447A4 /* Resource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resource.swift; sourceTree = "<group>"; };
 		A67DD8742C2D324400728246 /* CharactersResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersResponse.swift; sourceTree = "<group>"; };
 		A67DD8762C2D32BE00728246 /* InfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoResponse.swift; sourceTree = "<group>"; };
-		A67DD8782C2D32D200728246 /* ResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultResponse.swift; sourceTree = "<group>"; };
+		A67DD8782C2D32D200728246 /* CharacterResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResultResponse.swift; sourceTree = "<group>"; };
 		A67DD87A2C2D32E100728246 /* LocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationResponse.swift; sourceTree = "<group>"; };
 		A67DD87D2C2D35B000728246 /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		A6AAD2FE2CE64A1500399838 /* CharacterDetailsConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsConfigurator.swift; sourceTree = "<group>"; };
+		A6AAD2FF2CE64A1500399838 /* CharacterDetailsInitializer..swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsInitializer..swift; sourceTree = "<group>"; };
+		A6AAD3022CE64A1500399838 /* CharacterDetailsInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsInteractor.swift; sourceTree = "<group>"; };
+		A6AAD3032CE64A1500399838 /* CharacterDetailsInteractorInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsInteractorInput.swift; sourceTree = "<group>"; };
+		A6AAD3042CE64A1500399838 /* CharacterDetailsInteractorOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsInteractorOutput.swift; sourceTree = "<group>"; };
+		A6AAD3072CE64A1500399838 /* CharacterDetailsPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsPresenter.swift; sourceTree = "<group>"; };
+		A6AAD3082CE64A1500399838 /* CharacterDetailsModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsModuleInput.swift; sourceTree = "<group>"; };
+		A6AAD30A2CE64A1500399838 /* CharacterDetailsRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsRouter.swift; sourceTree = "<group>"; };
+		A6AAD30B2CE64A1500399838 /* CharacterDetailsRouterInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsRouterInput.swift; sourceTree = "<group>"; };
+		A6AAD30D2CE64A1500399838 /* CharacterDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewController.swift; sourceTree = "<group>"; };
+		A6AAD30E2CE64A1500399838 /* CharacterDetailsViewInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewInput.swift; sourceTree = "<group>"; };
+		A6AAD30F2CE64A1500399838 /* CharacterDetailsViewOutput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDetailsViewOutput.swift; sourceTree = "<group>"; };
+		A6AAD31F2CE64B2D00399838 /* CharacterDetailsModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsModuleOutput.swift; sourceTree = "<group>"; };
 		A6CA678A2C2DF3EC00C05656 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A6E08259128FE7BCF6FE5AB1 /* MenuTabBarConfigurator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarConfigurator.swift; sourceTree = "<group>"; };
 		A73E3C119BE2D01A33E77085 /* SplashScreenRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SplashScreenRouter.swift; sourceTree = "<group>"; };
@@ -379,8 +405,8 @@
 		1CC5FDC591786C9514DB017F /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				274C44E36F57493F2C78DEA8 /* SplashScreenRouterInput.swift */,
 				A73E3C119BE2D01A33E77085 /* SplashScreenRouter.swift */,
+				274C44E36F57493F2C78DEA8 /* SplashScreenRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -420,11 +446,8 @@
 		284435AE14F0E20E18CEED3B /* Store */ = {
 			isa = PBXGroup;
 			children = (
-				5583FE27C6E6F711C344EDC4 /* View */,
-				E30CCC1F4D756C1B9296EE0F /* Presenter */,
-				6E956B4D0B95CD6485B1B80D /* Interactor */,
-				BFB114D383AF0AA2EA8F64B3 /* Router */,
-				CFE00FAD7D75509FDD8ED567 /* Configurator */,
+				A6213C222CEFAD5D00B94E9E /* Application Logic */,
+				A6213C212CEFAD3C00B94E9E /* User interface */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -432,8 +455,8 @@
 		286CCE40E33129817F3C4D43 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				56145E3B72E33FDCF8F2DD67 /* SplashScreenModuleInput.swift */,
 				C42DFB8D5DD7BBDD6016E305 /* SplashScreenPresenter.swift */,
+				56145E3B72E33FDCF8F2DD67 /* SplashScreenModuleInput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -460,9 +483,9 @@
 		393399DBC84133BE3BD2F6D0 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				907E09480F08778EE9B73366 /* LoginInteractor.swift */,
 				37407F7077CF987E4AEFFCCC /* LoginInteractorInput.swift */,
 				41174C4910481EF71C7558BA /* LoginInteractorOutput.swift */,
-				907E09480F08778EE9B73366 /* LoginInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -505,11 +528,8 @@
 		420E2CC39B10DB017BE4560C /* MenuTabBar */ = {
 			isa = PBXGroup;
 			children = (
-				F9C67B3BCF399DB849FAA317 /* View */,
-				D4BC90FB661F097533A41492 /* Presenter */,
-				04977E9BEF62E88B3CD872C9 /* Interactor */,
-				60DB4C35D6FE6DDEE91EC716 /* Router */,
-				5702BC1681C2FF87D957DDBF /* Configurator */,
+				A6213C1F2CEFACCA00B94E9E /* Application Logic */,
+				A6213C202CEFACE000B94E9E /* User Interface */,
 			);
 			path = MenuTabBar;
 			sourceTree = "<group>";
@@ -525,9 +545,9 @@
 		47B038ED574D6C03F907B3FB /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				6F1610F6737B8CA701706BDC /* SplashScreenInteractor.swift */,
 				C46A60B159B83B05434F4544 /* SplashScreenInteractorInput.swift */,
 				B626E1F81F3B8D4ED94E8103 /* SplashScreenInteractorOutput.swift */,
-				6F1610F6737B8CA701706BDC /* SplashScreenInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -593,9 +613,9 @@
 		552A54F7403E32CB6B614B32 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				463D9EB64F2606332051E17A /* SplashScreenViewController.swift */,
 				F724457A799E4AEEA2534342 /* SplashScreenViewInput.swift */,
 				D027817E2A3E966A4C4B4035 /* SplashScreenViewOutput.swift */,
-				463D9EB64F2606332051E17A /* SplashScreenViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -827,6 +847,44 @@
 			path = RickAndMortyAppUITests;
 			sourceTree = "<group>";
 		};
+		A6213C1F2CEFACCA00B94E9E /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				5702BC1681C2FF87D957DDBF /* Configurator */,
+				04977E9BEF62E88B3CD872C9 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		A6213C202CEFACE000B94E9E /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				F9C67B3BCF399DB849FAA317 /* View */,
+				D4BC90FB661F097533A41492 /* Presenter */,
+				60DB4C35D6FE6DDEE91EC716 /* Router */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		A6213C212CEFAD3C00B94E9E /* User interface */ = {
+			isa = PBXGroup;
+			children = (
+				5583FE27C6E6F711C344EDC4 /* View */,
+				E30CCC1F4D756C1B9296EE0F /* Presenter */,
+				BFB114D383AF0AA2EA8F64B3 /* Router */,
+			);
+			path = "User interface";
+			sourceTree = "<group>";
+		};
+		A6213C222CEFAD5D00B94E9E /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				CFE00FAD7D75509FDD8ED567 /* Configurator */,
+				6E956B4D0B95CD6485B1B80D /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
 		A62FF1092BD9631800259FCD /* ServiceCoordinator */ = {
 			isa = PBXGroup;
 			children = (
@@ -923,6 +981,7 @@
 			children = (
 				420E2CC39B10DB017BE4560C /* MenuTabBar */,
 				5E77D0664963A2BC7CF4CD5A /* Home */,
+				A6AAD3122CE64A1500399838 /* CharacterDetails */,
 				284435AE14F0E20E18CEED3B /* Store */,
 				CBDE514A80E1BE87F39FCCFB /* Profile */,
 			);
@@ -982,7 +1041,7 @@
 			children = (
 				A67DD8742C2D324400728246 /* CharactersResponse.swift */,
 				A67DD8762C2D32BE00728246 /* InfoResponse.swift */,
-				A67DD8782C2D32D200728246 /* ResultResponse.swift */,
+				A67DD8782C2D32D200728246 /* CharacterResultResponse.swift */,
 				A67DD87A2C2D32E100728246 /* LocationResponse.swift */,
 			);
 			path = External;
@@ -994,6 +1053,90 @@
 				A67DD87D2C2D35B000728246 /* CharacterTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		A6AAD3002CE64A1500399838 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD2FE2CE64A1500399838 /* CharacterDetailsConfigurator.swift */,
+				A6AAD2FF2CE64A1500399838 /* CharacterDetailsInitializer..swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		A6AAD3012CE64A1500399838 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		A6AAD3052CE64A1500399838 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD3022CE64A1500399838 /* CharacterDetailsInteractor.swift */,
+				A6AAD3032CE64A1500399838 /* CharacterDetailsInteractorInput.swift */,
+				A6AAD3042CE64A1500399838 /* CharacterDetailsInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		A6AAD3062CE64A1500399838 /* Application Logic */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD3002CE64A1500399838 /* Configurator */,
+				A6AAD3012CE64A1500399838 /* Entity */,
+				A6AAD3052CE64A1500399838 /* Interactor */,
+			);
+			path = "Application Logic";
+			sourceTree = "<group>";
+		};
+		A6AAD3092CE64A1500399838 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD3072CE64A1500399838 /* CharacterDetailsPresenter.swift */,
+				A6AAD3082CE64A1500399838 /* CharacterDetailsModuleInput.swift */,
+				A6AAD31F2CE64B2D00399838 /* CharacterDetailsModuleOutput.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		A6AAD30C2CE64A1500399838 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD30A2CE64A1500399838 /* CharacterDetailsRouter.swift */,
+				A6AAD30B2CE64A1500399838 /* CharacterDetailsRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A6AAD3102CE64A1500399838 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD30D2CE64A1500399838 /* CharacterDetailsViewController.swift */,
+				A6AAD30E2CE64A1500399838 /* CharacterDetailsViewInput.swift */,
+				A6AAD30F2CE64A1500399838 /* CharacterDetailsViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A6AAD3112CE64A1500399838 /* User Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD3102CE64A1500399838 /* View */,
+				A6AAD3092CE64A1500399838 /* Presenter */,
+				A6AAD30C2CE64A1500399838 /* Router */,
+			);
+			path = "User Interface";
+			sourceTree = "<group>";
+		};
+		A6AAD3122CE64A1500399838 /* CharacterDetails */ = {
+			isa = PBXGroup;
+			children = (
+				A6AAD3062CE64A1500399838 /* Application Logic */,
+				A6AAD3112CE64A1500399838 /* User Interface */,
+			);
+			path = CharacterDetails;
 			sourceTree = "<group>";
 		};
 		A6CA67892C2DF3C000C05656 /* NetworkManager */ = {
@@ -1137,8 +1280,8 @@
 		D235ACDB79E194FD4B6BA24C /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				308FE61D52AB1482B43835F3 /* LoginRouterInput.swift */,
 				95D7476C004A668896EB6EA6 /* LoginRouter.swift */,
+				308FE61D52AB1482B43835F3 /* LoginRouterInput.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -1240,9 +1383,9 @@
 		EF38A6FE658A3CEC77D0B7AA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				60861EF989E94ABB0021BAA9 /* LoginViewController.swift */,
 				01AD9157435DECB3B6707605 /* LoginViewInput.swift */,
 				421D225419E14750D8D9987E /* LoginViewOutput.swift */,
-				60861EF989E94ABB0021BAA9 /* LoginViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1276,8 +1419,8 @@
 		F36082F49ADDE9FB60FA3F1C /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				6847F8B07BE45FB9F35812CF /* LoginModuleInput.swift */,
 				1932D670945CC48CDE760197 /* LoginPresenter.swift */,
+				6847F8B07BE45FB9F35812CF /* LoginModuleInput.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -1483,6 +1626,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6AAD3172CE64A1500399838 /* CharacterDetailsInteractorOutput.swift in Sources */,
 				A630B1C42BD83EC200F5777C /* UIApplication-extension.swift in Sources */,
 				EB8FB4AF2BD30C0B00F3037F /* BaseViewController.swift in Sources */,
 				A63760872C2E2E5F005447A4 /* HomeResources.swift in Sources */,
@@ -1492,8 +1636,9 @@
 				A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */,
 				4C3AC4A4437BEAB24C55767C /* LoginViewInput.swift in Sources */,
 				C3ECC949753BF15EE593AEC3 /* LoginViewOutput.swift in Sources */,
+				A6AAD31D2CE64A1500399838 /* CharacterDetailsViewInput.swift in Sources */,
 				0FE9D22D9AB5B71DDA522EC3 /* LoginViewController.swift in Sources */,
-				A67DD8792C2D32D200728246 /* ResultResponse.swift in Sources */,
+				A67DD8792C2D32D200728246 /* CharacterResultResponse.swift in Sources */,
 				A630B1C62BD83EEF00F5777C /* UIStoryboard-extension.swift in Sources */,
 				3CFD52ED16F0BBD58713FF94 /* LoginModuleInput.swift in Sources */,
 				A63760932C2E39F6005447A4 /* Resource.swift in Sources */,
@@ -1508,7 +1653,10 @@
 				36E60B511B522DF4A931AF64 /* LoginConfigurator.swift in Sources */,
 				A63760892C2E2E6D005447A4 /* HomeClient.swift in Sources */,
 				8219CFE21C02D2EB703980BF /* LoginInitializer.swift in Sources */,
+				A6AAD3202CE64B2D00399838 /* CharacterDetailsModuleOutput.swift in Sources */,
 				A62FF10B2BD963CC00259FCD /* ServiceCoordinator.swift in Sources */,
+				A6AAD31C2CE64A1500399838 /* CharacterDetailsViewController.swift in Sources */,
+				A6AAD3152CE64A1500399838 /* CharacterDetailsInteractor.swift in Sources */,
 				072E17205F2ABD63E8BDFCD1 /* HomeViewInput.swift in Sources */,
 				21F98F4A38D0797446EB5109 /* HomeViewOutput.swift in Sources */,
 				9DB993DD57E5BC0850C4958A /* HomeViewController.swift in Sources */,
@@ -1529,6 +1677,7 @@
 				4E74F304A425D1FC3226EA25 /* MenuTabBarPresenter.swift in Sources */,
 				A75750EF4663FCE8D24A4152 /* MenuTabBarInteractorInput.swift in Sources */,
 				27231322AE5C11D16E9246D9 /* MenuTabBarInteractorOutput.swift in Sources */,
+				A6AAD31B2CE64A1500399838 /* CharacterDetailsRouterInput.swift in Sources */,
 				CA193B105FDC89BDB4C70E14 /* MenuTabBarInteractor.swift in Sources */,
 				C3218C3835BE66FD3EB28C9E /* MenuTabBarRouterInput.swift in Sources */,
 				3BE4274685CC66A03DE7DFC1 /* MenuTabBarRouter.swift in Sources */,
@@ -1537,8 +1686,10 @@
 				AB9C3F11AE8C64CA633071B5 /* MenuTabBarInitializer.swift in Sources */,
 				2F4217006C2ECE3F50498E1F /* StoreViewInput.swift in Sources */,
 				B357B46D9FFA4AB3A774D80E /* StoreViewOutput.swift in Sources */,
+				A6AAD31E2CE64A1500399838 /* CharacterDetailsViewOutput.swift in Sources */,
 				380240A9B1C24EA0B3CCC7CD /* StoreViewController.swift in Sources */,
 				B6FA7E72766E7F5272B9605F /* StoreModuleInput.swift in Sources */,
+				A6AAD3142CE64A1500399838 /* CharacterDetailsInitializer..swift in Sources */,
 				0DB6D3222370AA1A66E9F16C /* StorePresenter.swift in Sources */,
 				CDF82D6836142580FBD10172 /* StoreInteractorInput.swift in Sources */,
 				2FE57DD289CF15F9523258D1 /* StoreInteractorOutput.swift in Sources */,
@@ -1550,6 +1701,8 @@
 				A9B34C2707F620C670D30C37 /* ProfileViewInput.swift in Sources */,
 				C267F2779BE574336719CA0F /* ProfileViewOutput.swift in Sources */,
 				1C00E6B3E0006627BE3A0145 /* ProfileViewController.swift in Sources */,
+				A6AAD3192CE64A1500399838 /* CharacterDetailsModuleInput.swift in Sources */,
+				A6AAD3132CE64A1500399838 /* CharacterDetailsConfigurator.swift in Sources */,
 				A637608B2C2E2E7F005447A4 /* HomeRegex.swift in Sources */,
 				156A384776089DCA1FEF6DBB /* ProfileModuleInput.swift in Sources */,
 				4DD2AF1C934E691F635740AB /* ProfilePresenter.swift in Sources */,
@@ -1563,6 +1716,8 @@
 				5E26D6C3D66BF6E2E8A2FBCA /* ProfileInitializer.swift in Sources */,
 				CC9CFE04B5BACEBFCD9C6B08 /* SplashScreenViewInput.swift in Sources */,
 				712BBEB08CB5EAE1616D72C9 /* SplashScreenViewOutput.swift in Sources */,
+				A6AAD3162CE64A1500399838 /* CharacterDetailsInteractorInput.swift in Sources */,
+				A6AAD3182CE64A1500399838 /* CharacterDetailsPresenter.swift in Sources */,
 				A67DD87E2C2D35B000728246 /* CharacterTableViewCell.swift in Sources */,
 				C5BEC75EC68EA0DEBF3FE7FD /* SplashScreenViewController.swift in Sources */,
 				4C4F126B022788ABBB0DE621 /* SplashScreenModuleInput.swift in Sources */,
@@ -1574,6 +1729,7 @@
 				817618AF04B51DDD0FCB77AD /* SplashScreenRouter.swift in Sources */,
 				791E8533E7CC2AEB581CCB0A /* SplashScreenConfigurator.swift in Sources */,
 				F3C4E76894D27E65CFBE988C /* SplashScreenInitializer.swift in Sources */,
+				A6AAD31A2CE64A1500399838 /* CharacterDetailsRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1779,7 +1935,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZJJ275SY3R;
+				DEVELOPMENT_TEAM = 747QCKGB68;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RickAndMortyApp/SupportFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "R & M";
@@ -1811,7 +1967,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = ZJJ275SY3R;
+				DEVELOPMENT_TEAM = 747QCKGB68;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RickAndMortyApp/SupportFiles/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "R & M";

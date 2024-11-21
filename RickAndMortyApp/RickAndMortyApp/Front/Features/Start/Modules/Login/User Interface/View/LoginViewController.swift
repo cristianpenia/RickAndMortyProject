@@ -58,7 +58,7 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
         
         setupUI()
-        setupTest()
+//        setupTest()
         
         output.viewIsReady()
     }
@@ -74,8 +74,6 @@ class LoginViewController: BaseViewController {
         
     }
     
-    
-    
     private func setupTest() {
         
 //        userTextField.placeholder = "Correo electrónico"
@@ -86,17 +84,17 @@ class LoginViewController: BaseViewController {
 //        userTextField.autocapitalizationType = .none
         
         // Forma I
-        let userTextFieldConfiguration = TextFieldConfiguration(placeholder: "Hola")
+//        let userTextFieldConfiguration = TextFieldConfiguration(placeholder: "Hola")
         
         // Forma II
-//        var userTextFieldConfiguration = TextFieldConfiguration()
-//
-//        userTextFieldConfiguration.placeholder = "Correo electrónico"
-//        userTextFieldConfiguration.errorMessage = "Ingresa un correo electrónico válido."
-//        userTextFieldConfiguration.validationPattern = .none
-//        userTextFieldConfiguration.validationPattern = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$"
-//        userTextFieldConfiguration.keyboardType = .emailAddress
-//        userTextFieldConfiguration.autocapitalizationType = .none
+        var userTextFieldConfiguration = TextFieldConfiguration()
+
+        userTextFieldConfiguration.placeholder = "Correo electrónico"
+        userTextFieldConfiguration.errorMessage = "Ingresa un correo electrónico válido."
+        userTextFieldConfiguration.validationPattern = .none
+        userTextFieldConfiguration.validationPattern = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}$"
+        userTextFieldConfiguration.keyboardType = .emailAddress
+        userTextFieldConfiguration.autocapitalizationType = .none
         
         userTextField = TextField(frame: CGRect(), configuration: userTextFieldConfiguration)
         
@@ -116,8 +114,7 @@ class LoginViewController: BaseViewController {
     }
     
     @IBAction func sendButtonAction(_ sender: Any) {
-        dump(userTextField.text)
-//        output.didTapSendButton()
+        output.didTapSendButton()
     }
 }
 
@@ -126,8 +123,7 @@ class LoginViewController: BaseViewController {
 
 extension LoginViewController: LoginViewInput {
     
-    func setupInitialState() {
-    }
+    func setupInitialState() {}
     
     func showLoading() {
         showViewLoading()
@@ -138,7 +134,9 @@ extension LoginViewController: LoginViewInput {
     }
     
     func showTooltip() {
+        
         let tooltip = TooltipView(text: "This is a tooltip message.\nTest two")
+        
         tooltip.show(at: CGPoint(x: view.center.x, y: view.center.y - 220), in: view)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {

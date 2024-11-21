@@ -28,10 +28,17 @@ class CharacterTableViewCell: UITableViewCell {
             profileImageView.layer.masksToBounds = false
             profileImageView.layer.borderWidth = 1.0
             profileImageView.layer.borderColor = UIColor.clear.cgColor
-            profileImageView.layer.cornerRadius = 80 / 2.0
+            profileImageView.layer.cornerRadius = 70 / 2.0
             profileImageView.clipsToBounds = true
         }
     }
+    
+    var nameLabel: UILabel! {
+        didSet {
+            nameLabel.textColor = .black
+        }
+    }
+    
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -64,16 +71,28 @@ class CharacterTableViewCell: UITableViewCell {
             make.leading.equalToSuperview().inset(16)
             make.centerY.equalToSuperview()
         }
+        
+        nameLabel = UILabel()
+        
+        contentBackView.addSubview(nameLabel)
+        
+        nameLabel.snp.makeConstraints { make in
+            make.top.equalTo(profileImageView.snp.top)
+            make.leading.equalTo(profileImageView.snp.trailing).offset(16)
+            make.trailing.equalToSuperview().inset(16)
+        }
     }
     
-    public func custom(with character: ResultResponse) {
+    public func custom(with character: CharacterResultResponse) {
         
         let profileURL = URL(string: character.image)!
         
         profileImageView.kf.setImage(with: profileURL)
+        
+        nameLabel.text = character.name
     }
     
     override func prepareForReuse() {
-        profileImageView = UIImageView()
+        nameLabel.text = ""
     }
 }

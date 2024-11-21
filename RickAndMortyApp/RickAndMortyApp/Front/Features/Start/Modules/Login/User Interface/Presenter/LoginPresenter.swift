@@ -8,28 +8,39 @@
 
 import UIKit
 
-class LoginPresenter: LoginModuleInput{
+class LoginPresenter {
 
     weak var view: LoginViewInput!
     var interactor: LoginInteractorInput!
     var router: LoginRouterInput!
 }
 
+
+// MARK: LoginModuleInput
+
+extension LoginPresenter: LoginModuleInput {
+    
+}
+
+
+// MARK: LoginViewOutput
+
 extension LoginPresenter: LoginViewOutput {
     
-    func viewIsReady() {
-    }
+    func viewIsReady() {}
     
     func didTapInformationButton() {
         view.showTooltip()
     }
     
     func didTapSendButton() {
-        
         view.showLoading()
         interactor.login()
     }
 }
+
+
+// MARK: LoginInteractorOutput
 
 extension LoginPresenter: LoginInteractorOutput {
     
@@ -43,6 +54,5 @@ extension LoginPresenter: LoginInteractorOutput {
         }
     }
     
-    func didFailLogin() {
-    }
+    func didFailLogin() {}
 }

@@ -9,5 +9,6 @@
 import Foundation
 
 protocol SplashScreenRouterInput {
+    
     func routeToLogin()
 }
