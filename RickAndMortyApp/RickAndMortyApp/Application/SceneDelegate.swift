@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let storyboard = UIStoryboard(name: Storyboards.Start.rawValue, bundle: nil)
         
-        if let splashScreenViewController = storyboard.instantiateViewController(withIdentifier: SplashScreenViewController.name) as? SplashScreenViewController {
+        if let splashScreenViewController = storyboard.instantiateViewController(withIdentifier: SplashScreenViewController.storyboardIdentifier) as? SplashScreenViewController {
             
             let configurator = SplashScreenModuleConfigurator()
             

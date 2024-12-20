@@ -7,7 +7,7 @@
 //
 
 protocol HomeViewOutput {
-    
+    @MainActor
     func viewIsReady()
     func didTapCharacterCell(character: CharacterResultResponse)
 }

@@ -7,6 +7,7 @@
 //
 
 protocol HomeViewInput: AnyObject {
+    @MainActor
     func setupInitialState(with characters: [CharacterResultResponse])
     func showLoading()
     func hideLoading()

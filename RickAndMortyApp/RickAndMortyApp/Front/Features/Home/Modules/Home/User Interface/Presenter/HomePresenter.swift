@@ -29,7 +29,7 @@ extension HomePresenter: HomeModuleInput {
 extension HomePresenter: HomeViewOutput {
     
     func viewIsReady() {
-        view.showLoading()
+        self.view.showLoading()
         interactor.getCharacters()
     }
     
@@ -43,20 +43,37 @@ extension HomePresenter: HomeViewOutput {
 
 extension HomePresenter: HomeInteractorOutput {
     
+    @MainActor 
     func didGetCharacters(_ characters: CharactersResponse) {
         let charactersArray = characters.results
         
-        view.hideLoading()
+        self.view.hideLoading()
         
         if charactersArray.isEmpty {
             // TODO: sistema de alerts
         } else {
-            view.setupInitialState(with: characters.results)
+            self.view.setupInitialState(with: characters.results)
         }
     }
     
     func didFailGettingCharacters() {
+        
         // TODO: sistema de alerts
-        view.hideLoading()
+        self.view.hideLoading()
+        
     }
 }
+
+// capas de viper
+// identacion,
+// estandar de espaciado entre clases
+// del viewcontroller sacar los @IBAction en una extension 
+// revisar  en el uso de las clases deinit()
+// template uso de self, en variables locales
+// ejemplo de simplificacion snapkit
+// forma de crear estructura de carpetas en el template en el template
+// agregar el template de startmodule el router
+// implementar el @MainActor
+// revisar los paquetes compartidos por Charly 
+
+

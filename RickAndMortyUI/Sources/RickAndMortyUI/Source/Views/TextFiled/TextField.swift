@@ -23,6 +23,7 @@ public class TextField: UIView {
             titleLabel.font = UIFont.systemFont(ofSize: 12)
             titleLabel.textColor = .darkGray
             titleLabel.alpha = 0
+//            titleLabel.backgroundColor = .red
         }
     }
     
@@ -41,6 +42,7 @@ public class TextField: UIView {
             messageLabel.font = UIFont.systemFont(ofSize: 12)
             messageLabel.textColor = .red
             messageLabel.isHidden = true
+//            messageLabel.backgroundColor = .orange
         }
     }
     
@@ -105,10 +107,18 @@ public class TextField: UIView {
         setupTextField()
     }
     
-    public init(frame: CGRect, configuration: TextFieldConfiguration) {
+    public init(frame: CGRect = CGRect(), configuration: TextFieldConfiguration) {
+        
         self.configuration = configuration
+        dump(self.configuration)
         
         super.init(frame: frame)
+        
+        placeholder = self.configuration.placeholder ?? ""
+        validationPattern = self.configuration.validationPattern
+        errorMessage = self.configuration.errorMessage
+        keyboardType = self.configuration.keyboardType
+        autocapitalizationType = self.configuration.autocapitalizationType
         
         setup()
         setupTextField()
@@ -127,6 +137,7 @@ public class TextField: UIView {
         }
         
         titleLabel = UILabel()
+        titleLabel.text = configuration.placeholder
         
         addSubview(titleLabel)
         
@@ -142,6 +153,7 @@ public class TextField: UIView {
                                                  right: 8)
         
         textField = PaddedTextField(padding: padding)
+        textField.placeholder = configuration.placeholder
         
         addSubview(textField)
         

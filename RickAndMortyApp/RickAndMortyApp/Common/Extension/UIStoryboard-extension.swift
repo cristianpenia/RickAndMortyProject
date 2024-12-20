@@ -34,12 +34,17 @@ public extension UIStoryboard {
     
 }
 
+/// StoryboardIdentifiable es un protocolo usado para obtener el identificador de cada View
 protocol StoryboardIdentifiable {
     static var storyboardIdentifier: String { get }
 }
 
+/// Se implemente una implementación por defecto en el protocolo para obtener el identificador
 extension StoryboardIdentifiable where Self: UIViewController {
     static var storyboardIdentifier: String {
         return String(describing: Self.self)
     }
 }
+
+/// Al extender `StoryboardIdentifiable` a todos los `UIViewController` facilitamos el acceso a este
+extension UIViewController: StoryboardIdentifiable { }

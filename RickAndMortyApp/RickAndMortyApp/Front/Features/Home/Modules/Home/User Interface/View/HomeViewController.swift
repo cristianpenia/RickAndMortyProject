@@ -19,7 +19,8 @@ class HomeViewController: BaseViewController {
             contentTableView.dataSource = self
             contentTableView.delegate = self
             contentTableView.separatorStyle = .none
-            contentTableView.register(CharacterTableViewCell.self, forCellReuseIdentifier: "CharacterTableViewCell")
+            contentTableView.register(CharacterTableViewCell.self,
+                                      forCellReuseIdentifier: CharacterTableViewCell.identifier)
         }
     }
     
@@ -97,7 +98,8 @@ extension HomeViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = contentTableView.dequeueReusableCell(withIdentifier: "CharacterTableViewCell", for: indexPath) as! CharacterTableViewCell
+        let cell = contentTableView.dequeueReusableCell(withIdentifier: CharacterTableViewCell.identifier,
+                                                        for: indexPath) as! CharacterTableViewCell
         
         let character = characters[indexPath.row]
         

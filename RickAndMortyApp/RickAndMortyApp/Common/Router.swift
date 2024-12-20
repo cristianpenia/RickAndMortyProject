@@ -10,7 +10,9 @@ import RickAndMortyUI
 
 protocol Routable {
     
-    func pushViewController(withIdentifer identifier: String, in storyBoard: UIStoryboard.Storyboard, from viewController: UIViewController)
+    func pushViewController(withIdentifer identifier: String, 
+                            in storyBoard: UIStoryboard.Storyboard,
+                            from viewController: UIViewController)
     
     func pushViewController<T: UIViewController>(withIdentifer identifier: String,
                                                  type: T.Type,
@@ -56,7 +58,8 @@ protocol Routable {
 
 extension Routable {
     
-    func pushViewController(withIdentifer identifier: String, in storyBoard: UIStoryboard.Storyboard, from viewController: UIViewController) {
+    func pushViewController(withIdentifer identifier: String, 
+                            in storyBoard: UIStoryboard.Storyboard, from viewController: UIViewController) {
         let storyBoard = UIStoryboard.storyboard(storyBoard)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: identifier)
         viewController.navigationController?.pushViewController(nextViewController, animated: true)
