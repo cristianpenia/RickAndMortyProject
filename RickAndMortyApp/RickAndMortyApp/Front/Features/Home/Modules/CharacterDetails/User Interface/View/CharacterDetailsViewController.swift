@@ -60,21 +60,29 @@ class CharacterDetailsViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setup()
+        
         output.viewIsReady()
     }
-
+    
 
     // MARK: - Setup
     
     private func setup() {
+        
+        if let navigationController {
+            navigationController.isNavigationBarHidden = false
+        }
+        
         contentBackView = UIView()
         
         view.addSubview(contentBackView)
         
         contentBackView.snp.makeConstraints { make in
-            make.edges.equalTo(self.view.safeAreaLayoutGuide).inset(16)
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            make.horizontalEdges.equalTo(self.view.safeAreaLayoutGuide.snp.horizontalEdges).inset(16)
+            make.bottom.equalTo(self.view.safeAreaLayoutGuide.snp.bottom).inset(8)
         }
         
         profileImageView = UIImageView()

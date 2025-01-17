@@ -117,17 +117,20 @@ struct UserResponse: DecodableResponse {
 class Test {
     func test() {
         let url = URL(string: "https://api.example.com/user")!
-        ServiceCoordinator.shared.request(UserResponse.self, url: url, method: "GET", headers: HeaderProvider().defaultHeaders()) { (result: Result<User, NetworkError>) in
+        
+        ServiceCoordinator.shared.request(
+            UserResponse.self,
+            url: url,
+            method: "GET",
+            headers: HeaderProvider()
+                .defaultHeaders()
+        ) { (result: Result<User, NetworkError>) in
             switch result {
             case .success(let user):
-                print("User Name: \(user.name)")
+                LogManager.log("User Name: \(user.name)", type: .network)
             case .failure(let error):
-                print("Error: \(error)")
+                LogManager.log("Error: \(error)", type: .network)
             }
         }
     }
 }
-
-
-
-

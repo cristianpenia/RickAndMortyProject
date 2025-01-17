@@ -72,6 +72,7 @@
 		947F145BBD5A98367DFCBBC6 /* HomeConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957E02A89AD43BF18573AF0F /* HomeConfigurator.swift */; };
 		9DB993DD57E5BC0850C4958A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C0F8C1211349EBEA3FCA277 /* HomeViewController.swift */; };
 		A48053C1AD4D4370395902F8 /* ProfileRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 437F0770268866D444DC6937 /* ProfileRouterInput.swift */; };
+		A60C36C72D1E4D2B00D6C8A8 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60C36C62D1E4D2B00D6C8A8 /* Logger.swift */; };
 		A60D69F12BD2F0C00073C826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F02BD2F0C00073C826 /* AppDelegate.swift */; };
 		A60D69F32BD2F0C00073C826 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */; };
 		A60D69F82BD2F0C00073C826 /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A60D69F62BD2F0C00073C826 /* Start.storyboard */; };
@@ -241,6 +242,7 @@
 		9EEE98297547E8963A643254 /* StorePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StorePresenter.swift; sourceTree = "<group>"; };
 		9F5FC010DCF5F5A1CECDD122 /* MenuTabBarRouterInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuTabBarRouterInput.swift; sourceTree = "<group>"; };
 		9FDA48BF6863904263E0FB4B /* ProfileViewInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ProfileViewInput.swift; sourceTree = "<group>"; };
+		A60C36C62D1E4D2B00D6C8A8 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		A60D69ED2BD2F0C00073C826 /* RickAndMortyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RickAndMortyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A60D69F02BD2F0C00073C826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A60D69F22BD2F0C00073C826 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -502,7 +504,7 @@
 		3E18AAB2C83B95D27DF38710 /* Start */ = {
 			isa = PBXGroup;
 			children = (
-				A6668C272C8131E40048CD04 /* Common */,
+				A67BD2A12D3B158700B93C78 /* Common */,
 				A65B08DC2C2CFF8800DF91CF /* Modules */,
 			);
 			path = Start;
@@ -988,13 +990,6 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		A6668C272C8131E40048CD04 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		A66E70952BD2F3680073E88B /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1026,6 +1021,13 @@
 				A630B1C02BD81DD900F5777C /* Home.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A67BD2A12D3B158700B93C78 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		A67DD8722C2D322E00728246 /* Entity */ = {
@@ -1367,6 +1369,7 @@
 				EB8FB4AE2BD30C0B00F3037F /* BaseViewController.swift */,
 				A630B1BA2BD7847F00F5777C /* ListViewControllers.swift */,
 				A630B1BC2BD7848900F5777C /* Storyboards.swift */,
+				A60C36C62D1E4D2B00D6C8A8 /* Logger.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1651,6 +1654,7 @@
 				A630B1BD2BD7848900F5777C /* Storyboards.swift in Sources */,
 				A630B1BB2BD7847F00F5777C /* ListViewControllers.swift in Sources */,
 				36E60B511B522DF4A931AF64 /* LoginConfigurator.swift in Sources */,
+				A60C36C72D1E4D2B00D6C8A8 /* Logger.swift in Sources */,
 				A63760892C2E2E6D005447A4 /* HomeClient.swift in Sources */,
 				8219CFE21C02D2EB703980BF /* LoginInitializer.swift in Sources */,
 				A6AAD3202CE64B2D00399838 /* CharacterDetailsModuleOutput.swift in Sources */,

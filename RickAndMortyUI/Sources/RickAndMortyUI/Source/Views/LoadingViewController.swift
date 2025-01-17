@@ -43,7 +43,7 @@ public class LoadingViewController: UIViewController {
     }
     
     public override func viewWillDisappear(_ animated: Bool) {
-        super.viewDidDisappear(true)
+        super.viewWillDisappear(animated)
         
         animationView.stop()
     }

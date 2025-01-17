@@ -66,7 +66,7 @@ class BaseViewController: UIViewController {
             }
         } else {
             // TODO: validar el comportamiento del loading
-            print("no hay vista")
+            LogManager.log("No hay vista", type: .error)
         }
     }
 }

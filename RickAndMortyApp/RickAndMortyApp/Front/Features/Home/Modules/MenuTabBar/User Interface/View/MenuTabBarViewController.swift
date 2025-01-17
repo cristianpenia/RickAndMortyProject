@@ -44,6 +44,7 @@ class MenuTabBarViewController: UITabBarController {
         super.viewDidLoad()
         
         setupItems()
+        
         output.viewIsReady()
     }
     
@@ -56,6 +57,10 @@ class MenuTabBarViewController: UITabBarController {
     }
     
     private func setupItems() {
+        let backButton = UIBarButtonItem()
+        
+        backButton.title = ""
+        navigationItem.backBarButtonItem = backButton
         
         let storyboard = UIStoryboard(name: Storyboards.Home.rawValue, bundle: nil)
         

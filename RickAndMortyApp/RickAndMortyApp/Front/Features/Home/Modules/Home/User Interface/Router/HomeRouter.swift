@@ -16,12 +16,31 @@ extension HomeRouter: HomeRouterInput {
     
     func routeToCharacterDetailsView(character: CharacterResultResponse) {
         
-        presentPanModalController(withIdentifer: CharacterDetailsViewController.storyboardIdentifier,
-                                  type: CharacterDetailsViewController.self,
-                                  in: .home,
-                                  from: viewController) { characterDetailsViewController in
-            
-            characterDetailsViewController.moduleInput().initializeModule(character: character)
-        }
+        pushViewController(
+            withIdentifer: CharacterDetailsViewController.storyboardIdentifier,
+            type: CharacterDetailsViewController.self,
+            in: .home,
+            from: viewController
+        ) { characterDetailsViewController in
+            characterDetailsViewController
+                .moduleInput()
+                .initializeModule(
+                    character: character
+                )
+            }
+        
+//        presentPanModalController(
+//            withIdentifer: CharacterDetailsViewController.storyboardIdentifier,
+//            type: CharacterDetailsViewController.self,
+//            in: .home,
+//            from: viewController
+//        ) { characterDetailsViewController in
+//            
+//            characterDetailsViewController
+//                .moduleInput()
+//                .initializeModule(
+//                    character: character
+//                )
+//        }
     }
 }

@@ -59,7 +59,7 @@ class CharacterTableViewCell: UITableViewCell {
         addSubview(contentBackView)
         
         contentBackView.snp.makeConstraints { make in
-            make.size.equalTo(114)
+            make.height.equalTo(114)
             make.horizontalEdges.equalToSuperview().inset(16)
             make.centerY.equalToSuperview()
         }

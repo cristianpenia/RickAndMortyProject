@@ -59,7 +59,8 @@ protocol Routable {
 extension Routable {
     
     func pushViewController(withIdentifer identifier: String, 
-                            in storyBoard: UIStoryboard.Storyboard, from viewController: UIViewController) {
+                            in storyBoard: UIStoryboard.Storyboard,
+                            from viewController: UIViewController) {
         let storyBoard = UIStoryboard.storyboard(storyBoard)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: identifier)
         viewController.navigationController?.pushViewController(nextViewController, animated: true)

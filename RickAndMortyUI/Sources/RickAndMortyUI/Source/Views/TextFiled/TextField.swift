@@ -110,7 +110,6 @@ public class TextField: UIView {
     public init(frame: CGRect = CGRect(), configuration: TextFieldConfiguration) {
         
         self.configuration = configuration
-        dump(self.configuration)
         
         super.init(frame: frame)
         

@@ -32,9 +32,7 @@ class HomeViewController: BaseViewController {
             contentTableView.reloadData()
         }
     }
-//    private var characterView = CharacterView()
     
-//    private var viewModel: CharacterViewModel?
     var output: HomeViewOutput!
     
     
@@ -43,9 +41,23 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        addViews()
+        setup()
         
         output.viewIsReady()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let navigationController {
+            navigationController.isNavigationBarHidden = true
+        }
+    }
+    
+    
+    private func setup() {
+        
+        addViews()
     }
     
     private func addViews() {
@@ -56,8 +68,8 @@ class HomeViewController: BaseViewController {
         
         contentTableView.snp.makeConstraints { make in
             make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
-            make.size.width.equalToSuperview()
-            make.bottom.equalToSuperview().inset(80)
+            make.width.equalToSuperview()
+            make.bottom.equalToSuperview().offset(80)
         }
         
         let tableFooterView = UIView()
