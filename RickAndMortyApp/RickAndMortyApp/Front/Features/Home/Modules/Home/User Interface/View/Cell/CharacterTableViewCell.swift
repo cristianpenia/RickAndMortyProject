@@ -33,12 +33,30 @@ class CharacterTableViewCell: UITableViewCell {
         }
     }
     
+    // TODO: pasar esto a genericos
     var nameLabel: UILabel! {
         didSet {
             nameLabel.textColor = .black
         }
     }
     
+    var speciesLabel: UILabel! {
+        didSet {
+            speciesLabel.textColor = .lightGray
+            speciesLabel.font = UIFont.systemFont(ofSize: 13)
+        }
+    }
+    
+    var statusLabel: UILabel! {
+        didSet {
+            statusLabel.textColor = .lightGray
+            statusLabel.font = UIFont.systemFont(ofSize: 13)
+        }
+    }
+    
+    
+    // MARK: Properties
+    // TODO: colocar una funcion para esto
     static let identifier = "CharacterTableViewCell"
     
     
@@ -83,6 +101,26 @@ class CharacterTableViewCell: UITableViewCell {
             make.leading.equalTo(profileImageView.snp.trailing).offset(16)
             make.trailing.equalToSuperview().inset(16)
         }
+        
+        speciesLabel = UILabel()
+        
+        contentBackView.addSubview(speciesLabel)
+        
+        speciesLabel.snp.makeConstraints { make in
+            make.top.equalTo(nameLabel.snp.bottom).offset(6)
+            make.leading.equalTo(profileImageView.snp.trailing).offset(16)
+            make.trailing.equalToSuperview().inset(16)
+        }
+        
+        statusLabel = UILabel()
+        
+        contentBackView.addSubview(statusLabel)
+        
+        statusLabel.snp.makeConstraints { make in
+            make.top.equalTo(speciesLabel.snp.bottom).offset(2)
+            make.leading.equalTo(profileImageView.snp.trailing).offset(16)
+            make.trailing.equalToSuperview().inset(16)
+        }
     }
     
     public func custom(with character: CharacterResultResponse) {
@@ -92,9 +130,14 @@ class CharacterTableViewCell: UITableViewCell {
         profileImageView.kf.setImage(with: profileURL)
         
         nameLabel.text = character.name
+        // TODO: para a un gestor de escritura
+        speciesLabel.text = "Especie: \(character.species)"
+        statusLabel.text = "Estatus: \(character.status)"
     }
     
     override func prepareForReuse() {
         nameLabel.text = ""
+        speciesLabel.text = ""
+        statusLabel.text = ""
     }
 }
